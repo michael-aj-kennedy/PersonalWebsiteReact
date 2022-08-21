@@ -1,0 +1,16 @@
+﻿.mk-sidebar {
+    width: 15%;
+}
+
+@media (max-width: 1400px) {
+    .mk-sidebar {
+        display: none !important;
+    }
+}
+
+.mk-sidebar img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-style: none;
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "About",
+    "showArticleList": false,
+    "default":  true,
+    "articleSource": "1.json"
+  },
+  {
+    "id": 2,
+    "name": "Blog",
+    "showArticleList": true,
+    "articleSource": "2.json"
+  }
+]

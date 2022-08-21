@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "about",
+    "title": "About",
+    "summary": "summary text",
+    "url": null,
+    "date": "2000-01-01T00:00:00Z",
+    "articleDataFile": "1.json"
+  }
+]

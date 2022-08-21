@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "name": "blog 1",
+    "title": "Blog 1",
+    "summary": "blog 1",
+    "url": null,
+    "date": "2000-01-02T00:00:00Z",
+    "articleDataFile": "2.json"
+  },
+  {
+    "id": 3,
+    "name": "blog 2",
+    "title": "Blog 2",
+    "summary": "blog 2",
+    "url": null,
+    "date": "2000-01-03T00:00:00Z",
+    "articleDataFile": "3.json"
+  }
+]
