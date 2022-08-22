@@ -27,12 +27,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="client-app\public\favicon.ico" />
     <None Remove="client-app\src\aspnetcore-https.ts" />
     <None Remove="client-app\src\aspnetcore-react.ts" />
+    <None Remove="client-app\src\components\header\Header.tsx" />
     <None Remove="client-app\src\components\Nav.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="client-app\public\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="client-app\src\images\background\1.jpg" />
     <Content Include="client-app\src\images\mk.jpg" />
     <Content Include="client-app\src\images\mk2 - Copy.jpg" />
@@ -44,8 +50,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="client-app\src\components\header\Header.tsx" />
     <TypeScriptCompile Include="client-app\src\components\ImageBar.tsx" />
-    <TypeScriptCompile Include="client-app\src\components\Nav.tsx" />
+    <TypeScriptCompile Include="client-app\src\components\nav\Nav.tsx" />
     <TypeScriptCompile Include="client-app\src\aspnetcore-https.ts" />
     <TypeScriptCompile Include="client-app\src\aspnetcore-react.ts" />
   </ItemGroup>

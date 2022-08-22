@@ -1,0 +1,21 @@
+﻿.nav-parent {
+    position: fixed;
+    width: 0;
+    z-index: 50;
+}
+
+.nav-container {
+    height: 45px;
+    width: 100vh;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+}
+
+.nav-items {
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

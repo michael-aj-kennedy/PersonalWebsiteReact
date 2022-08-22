@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
-import { Category } from './../interfaces/data/category'
+import { Category } from './../../interfaces/data/category'
+import './Nav.css';
 
 interface IProps {
 }
@@ -21,12 +22,18 @@ export class Nav extends Component<IProps, IState> {
 
     static renderCategories(categories: Category[]) {
         return (
-            <ul>
-                {categories.map(category =>
-                    <li key={category.id}>
-                        {category.name}
-                    </li>
-                )}
+            <ul className="nav-items">
+                {categories.map((category, index) => {
+                    const isFirst = index === 0;
+                    const isLast = index === categories.length - 1;
+
+                    return (
+                        <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
+                            {category.name}
+                        </li>
+                    );
+                    
+                })}
             </ul>
         );
     }
@@ -37,9 +44,11 @@ export class Nav extends Component<IProps, IState> {
             : Nav.renderCategories(this.state.categories);
 
         return (
-            <nav className="Nav">
-                {contents}
-            </nav>
+            <div className="nav-parent">
+                <div className="nav-container">
+                    {contents}
+                </div>
+            </div>
         );
     }
 

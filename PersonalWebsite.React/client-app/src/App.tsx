@@ -1,6 +1,7 @@
 import React from 'react';
-import { Nav } from './components/Nav';
+import { Nav } from './components/nav/Nav';
 import { ImageBar } from './components/ImageBar';
+import { Header } from './components/header/Header';
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,12 +10,10 @@ function App() {
         <div className="mk-app">
             <ImageBar />
             <div className="mk-container">
-                <header className="mk-header">
-                    header
-                </header>
+                <Header />
                 <div className="mk-content">
                     <nav>
-                        nav
+                        <Nav />
                     </nav>
                     <article>
                         article
@@ -23,7 +22,7 @@ function App() {
             </div>
 
             <header className="App-header">
-                <Nav></Nav>
+                
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
