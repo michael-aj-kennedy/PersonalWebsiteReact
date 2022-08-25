@@ -22,19 +22,21 @@ export class Nav extends Component<IProps, IState> {
 
     static renderCategories(categories: Category[]) {
         return (
-            <ul className="nav-items">
-                {categories.map((category, index) => {
-                    const isFirst = index === 0;
-                    const isLast = index === categories.length - 1;
+            <nav>
+                <ul className="nav-items">
+                    {categories.map((category, index) => {
+                        const isFirst = index === 0;
+                        const isLast = index === categories.length - 1;
 
-                    return (
-                        <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
-                            <a>{category.name}</a>
-                        </li>
-                    );
+                        return (
+                            <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
+                                <a>{category.name}</a>
+                            </li>
+                        );
                     
-                })}
-            </ul>
+                    })}
+                </ul>
+            </nav>
         );
     }
 

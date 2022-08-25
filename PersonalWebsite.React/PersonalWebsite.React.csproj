@@ -34,6 +34,7 @@
     <None Remove="client-app\public\favicon.ico" />
     <None Remove="client-app\src\aspnetcore-https.ts" />
     <None Remove="client-app\src\aspnetcore-react.ts" />
+    <None Remove="client-app\src\components\articles\Articles.tsx" />
     <None Remove="client-app\src\components\header\Header.tsx" />
     <None Remove="client-app\src\components\Nav.tsx" />
   </ItemGroup>
@@ -55,7 +56,6 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="client-app\src\components\header\Header.tsx" />
-    <TypeScriptCompile Include="client-app\src\components\ImageBar.tsx" />
     <TypeScriptCompile Include="client-app\src\components\nav\Nav.tsx" />
     <TypeScriptCompile Include="client-app\src\aspnetcore-https.ts" />
     <TypeScriptCompile Include="client-app\src\aspnetcore-react.ts" />

@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import sideImage from './../images/background/1.jpg'
+import sideImage from './../../images/background/1.jpg'
 import './ImageBar.css';
 
 export function ImageBar() {
