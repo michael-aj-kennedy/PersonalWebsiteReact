@@ -19,3 +19,29 @@
     margin: 0;
     list-style: none;
 }
+
+li {
+    border-top: none !important;
+    border-right: none !important;
+    box-shadow: 0 2px 10px 1px rgb(209 186 209 / 40%);
+    z-index: 2;
+    background-color: #fafafa;
+    border: solid 1px #d1d5d5;
+}
+
+ul li:first-child {
+    border-radius: 0 0 10px;
+    border-right: 1px solid #d1d5d5;
+}
+
+ul li:last-child {
+    border-radius: 0 0 0 10px;
+}
+
+li a {
+    padding: 6px 20px 10px 20px;
+    color: #343a40 !important;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}

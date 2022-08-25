@@ -29,7 +29,7 @@ export class Nav extends Component<IProps, IState> {
 
                     return (
                         <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
-                            {category.name}
+                            <a>{category.name}</a>
                         </li>
                     );
                     

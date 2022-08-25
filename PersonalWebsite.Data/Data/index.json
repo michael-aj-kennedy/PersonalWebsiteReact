@@ -11,5 +11,17 @@
     "name": "Blog",
     "showArticleList": true,
     "articleSource": "2.json"
+  },
+  {
+    "id": 2,
+    "name": "Showcase",
+    "showArticleList": true,
+    "articleSource": "3.json"
+  },
+  {
+    "id": 4,
+    "name": "Experience",
+    "showArticleList": true,
+    "articleSource": "4.json"
   }
 ]
