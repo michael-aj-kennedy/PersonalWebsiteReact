@@ -7,11 +7,6 @@ namespace PersonalWebsite.Data.Interfaces
         /// <summary>
         /// Executes read operation.
         /// </summary>
-        Task Read();
-
-        /// <summary>
-        /// Category list.
-        /// </summary>
-        List<Category> Categories { get; }
+        Task<List<Category>> Read();
     }
 }

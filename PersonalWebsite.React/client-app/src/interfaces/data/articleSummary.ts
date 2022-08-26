@@ -8,4 +8,5 @@ export interface ArticleSummary {
     url: string;
     date?: Date;
     articleDataFile: string;
+    pinned: boolean;
 }

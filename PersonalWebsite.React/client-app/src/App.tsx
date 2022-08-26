@@ -7,7 +7,7 @@ import {
 import { Nav } from './components/nav/Nav';
 import { ImageBar } from './components/imageBar/ImageBar';
 import { Header } from './components/header/Header';
-import { Articles } from './components/articles/Articles';
+import { Category } from './components/category/Category';
 import './App.css';
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
                     <div className="router-container">
                         <BrowserRouter>
                             <Routes>
-                                <Route path="/" element={<Articles />} />
-                                <Route path="/:category" element={<Articles />} />
+                                <Route path="/" element={<Category />} />
+                                <Route path="/:category" element={<Category />} />
                                 <Route
                                     path="*"
                                     element={

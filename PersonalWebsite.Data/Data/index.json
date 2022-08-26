@@ -2,26 +2,26 @@
   {
     "id": 1,
     "name": "About",
-    "showArticleList": false,
+    "overrideArticleListCategoryId": 2,
     "default":  true,
     "articleSource": "1.json"
   },
   {
     "id": 2,
     "name": "Blog",
-    "showArticleList": true,
+    "overrideArticleList": false,
     "articleSource": "2.json"
   },
   {
     "id": 3,
     "name": "Showcase",
-    "showArticleList": true,
+    "overrideArticleList": false,
     "articleSource": "3.json"
   },
   {
     "id": 4,
     "name": "Experience",
-    "showArticleList": true,
+    "overrideArticleList": false,
     "articleSource": "4.json"
   }
 ]

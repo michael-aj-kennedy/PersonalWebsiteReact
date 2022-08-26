@@ -24,13 +24,16 @@ namespace PersonalWebsite.Data.Readers
         }
 
         /// <inheritdoc/>
-        public async Task Read()
+        public async Task<List<Category>> Read()
         {
             if (!string.IsNullOrWhiteSpace(fileName))
             {
                 var fileContent = await ReadJson(fileName);
                 Categories = Deserialise(fileContent) ?? new List<Category>();
+                return Categories;
             }
+
+            return new List<Category>();
         }
 
         /// <inheritdoc/>

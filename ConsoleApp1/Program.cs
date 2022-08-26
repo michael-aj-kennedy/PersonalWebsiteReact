@@ -9,7 +9,7 @@ foreach (var category in reader.Categories)
 {
     var categoryReader = new PersonalWebsite.Data.Readers.CategoryFileReader(searchLocation);
     await categoryReader.Read(category);
-
+    /*
     foreach (var articleSummary in categoryReader.ArticleSummaries)
     {
         var articleReader = new PersonalWebsite.Data.Readers.ArticleFileReader(searchLocation);
@@ -17,6 +17,6 @@ foreach (var category in reader.Categories)
 
 
     }
-
+    */
 }
 

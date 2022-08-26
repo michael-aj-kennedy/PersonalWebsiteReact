@@ -36,5 +36,10 @@
         /// Article data file.
         /// </summary>
         string ArticleDataFile { get; set; }
+
+        /// <summary>
+        /// Indicates that an article is pinned to the top of the category list.
+        /// </summary>
+        bool Pinned { get; set; }
     }
 }

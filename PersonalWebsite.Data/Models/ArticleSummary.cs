@@ -35,5 +35,9 @@ namespace PersonalWebsite.Data.Models
         /// <inheritdoc/>
         [JsonPropertyName("articleDataFile")]
         public string ArticleDataFile { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        [JsonPropertyName("pinned")]
+        public bool Pinned { get; set; }
     }
 }

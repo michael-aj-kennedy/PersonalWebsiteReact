@@ -3,7 +3,8 @@
 export interface Category {
     id: number;
     name: string;
-    showArticleList: boolean;
+    overrideArticleList: boolean;
+    overrideArticleListCategoryId?: number;
     articleSource: string;
     default: boolean;
 }

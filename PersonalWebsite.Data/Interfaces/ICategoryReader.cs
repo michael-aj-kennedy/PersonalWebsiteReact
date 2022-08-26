@@ -8,11 +8,11 @@ namespace PersonalWebsite.Data.Interfaces
         /// Executes read operation.
         /// </summary>
         /// <param name="category">Target category</param>
-        Task Read(ICategory category);
+        Task<List<ArticleSummary>> Read(ICategory category);
 
         /// <summary>
-        /// Article summary list.
+        /// Find the first article in the list.
         /// </summary>
-        List<ArticleSummary> ArticleSummaries { get; }
+        Task<ArticleSummary?> GetTopArticleSummary(ICategory category);
     }
 }

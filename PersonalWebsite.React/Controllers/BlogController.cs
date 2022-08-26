@@ -28,5 +28,18 @@ namespace PersonalWebsite.React.Controllers
 
             return categories;
         }
+
+        [Route("articles/{search}")]
+        public async Task<ActionResult<CategoryContent>> Articles(string search)
+        {
+            var articles = await _dataReader.GetCategoryArticles(search);
+
+            if (articles == null || articles.ArticleSummaries == null || !articles.ArticleSummaries.Any())
+            {
+                return NoContent();
+            }
+
+            return articles;
+        }
     }
 }

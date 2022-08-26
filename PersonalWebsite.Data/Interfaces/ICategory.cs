@@ -13,9 +13,9 @@
         string Name { get; set; }
 
         /// <summary>
-        /// Indicates that the category should display the full article list.
+        /// Indicates the id of the category used to override the article list.
         /// </summary>
-        bool ShowArticleList { get; set; }
+        int? OverrideArticleListCategoryId { get; set; }
 
         /// <summary>
         /// File name of associated article list.

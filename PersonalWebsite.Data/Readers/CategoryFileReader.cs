@@ -21,19 +21,32 @@ namespace PersonalWebsite.Data.Readers
         }
 
         /// <inheritdoc/>
-        public async Task Read(ICategory category)
+        public async Task<List<ArticleSummary>> Read(ICategory category)
         {
+            var returnData = new List<ArticleSummary>();
+
             if (!string.IsNullOrWhiteSpace(_searchLocation) &&
                 category != null && 
                 !string.IsNullOrWhiteSpace(category.ArticleSource))
             {
                 var fileName = $"{_searchLocation.TrimEnd('\\')}\\Categories\\{category.ArticleSource}";
                 var fileContent = await ReadJson(fileName);
-                ArticleSummaries = Deserialise(fileContent) ?? new List<ArticleSummary>();
+                returnData = Deserialise(fileContent) ?? new List<ArticleSummary>();
             }
+
+            return returnData
+                .OrderBy(s => s.Pinned)
+                .ThenByDescending(s => s.Date)
+                .ToList();
         }
 
         /// <inheritdoc/>
-        public List<ArticleSummary> ArticleSummaries { get; private set; } = new List<ArticleSummary>();
+        public async Task<ArticleSummary?> GetTopArticleSummary(ICategory category)
+        {
+            var articleSummaries = await Read(category);
+
+            return articleSummaries
+                .FirstOrDefault();
+        }
     }
 }

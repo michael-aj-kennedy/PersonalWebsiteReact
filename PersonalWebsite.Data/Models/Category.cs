@@ -13,9 +13,20 @@ namespace PersonalWebsite.Data.Models
         [JsonPropertyName("name")]
         public string Name { get; set; } = string.Empty;
 
+        /// <summary>
+        /// Indicates that the article list can be overridden.
+        /// </summary>
+        public bool OverrideArticleList
+        {
+            get
+            {
+                return OverrideArticleListCategoryId.GetValueOrDefault() > 0;
+            }
+        }
+
         /// <inheritdoc/>
-        [JsonPropertyName("showArticleList")]
-        public bool ShowArticleList { get; set; }
+        [JsonPropertyName("overrideArticleListCategoryId")]
+        public int? OverrideArticleListCategoryId { get; set; }
 
         /// <inheritdoc/>
         [JsonPropertyName("articleSource")]
