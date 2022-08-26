@@ -35,6 +35,7 @@
     <None Remove="client-app\src\aspnetcore-https.ts" />
     <None Remove="client-app\src\aspnetcore-react.ts" />
     <None Remove="client-app\src\components\category\Category.tsx" />
+    <None Remove="client-app\src\components\category\CategoryRoute.tsx" />
     <None Remove="client-app\src\components\header\Header.tsx" />
     <None Remove="client-app\src\components\Nav.tsx" />
   </ItemGroup>

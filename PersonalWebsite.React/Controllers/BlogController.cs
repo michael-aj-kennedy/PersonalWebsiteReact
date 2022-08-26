@@ -29,6 +29,12 @@ namespace PersonalWebsite.React.Controllers
             return categories;
         }
 
+        [Route("articles")]
+        public async Task<ActionResult<CategoryContent>> Articles()
+        {
+            return await Articles("");
+        }
+
         [Route("articles/{search}")]
         public async Task<ActionResult<CategoryContent>> Articles(string search)
         {
