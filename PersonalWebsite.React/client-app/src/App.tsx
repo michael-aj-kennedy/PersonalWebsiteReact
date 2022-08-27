@@ -4,6 +4,7 @@ import { Nav } from './components/nav/Nav';
 import { ImageBar } from './components/imageBar/ImageBar';
 import { Header } from './components/header/Header';
 import { CategoryRoute } from './components/category/CategoryRoute';
+import { Category } from './components/category/Category';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
                     <Nav />
                     <div className="router-container">
                         <Routes>
-                            <Route path="/" element={<CategoryRoute />} />
+                            <Route path="/" element={<CategoryRoute   />} />
                             <Route path="/:category" element={<CategoryRoute />} />
                         </Routes>
 

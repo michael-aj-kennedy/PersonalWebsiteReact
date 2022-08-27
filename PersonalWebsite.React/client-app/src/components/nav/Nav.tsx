@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import { Link } from "react-router-dom"
 import { Category } from './../../interfaces/data/category'
 import './Nav.css';
 
@@ -30,7 +31,9 @@ export class Nav extends Component<IProps, IState> {
 
                         return (
                             <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
-                                <a>{category.name}</a>
+                                <Link to={`/${category.name}`}>
+                                    {category.name}
+                                </Link>
                             </li>
                         );
                     

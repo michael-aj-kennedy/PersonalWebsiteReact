@@ -1,5 +1,4 @@
 ﻿import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from "react-router-dom"
 import './Header.css';
 import profile from './../../images/mk2.jpg'
