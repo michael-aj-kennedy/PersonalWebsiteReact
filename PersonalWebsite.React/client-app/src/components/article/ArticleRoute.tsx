@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useParams } from "react-router-dom";
 
 interface IProps {
-    defaultArticleId: number
+    category: number;
+    defaultArticleId: number;
 }
 
 export function ArticleRoute(props: IProps) {
@@ -34,7 +35,9 @@ export function ArticleRoute(props: IProps) {
 
     return (
         <article className="article">
-            .{id}.{props.defaultArticleId}.
+            Category: {props.category}<br/>
+            Id: {id}<br/>
+            Default article id: {props.defaultArticleId}<br/>
         </article>
     );
 }

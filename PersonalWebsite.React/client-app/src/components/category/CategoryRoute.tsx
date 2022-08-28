@@ -13,7 +13,7 @@ export function CategoryRoute() {
         async function getArticleSummaries(categoryName: string) {
             try {
                 const response = await axios.get(
-                    `blog/articles/${categoryName}`
+                    `/blog/articles/${categoryName}`
                 );
                 setArticles({ name: categoryName, data: response.data });
             } catch (e) {

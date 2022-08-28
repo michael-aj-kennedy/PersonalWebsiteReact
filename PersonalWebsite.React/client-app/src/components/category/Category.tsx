@@ -26,7 +26,7 @@ export function Category(props: IProps) {
                     );
                 })}
             </ul>
-            <ArticleRoute defaultArticleId={categoryContent?.defaultArticleId ?? 0} />
+            <ArticleRoute category={categoryContent.categoryId} defaultArticleId={categoryContent?.defaultArticleId ?? 0} />
         </div>
     );
 }

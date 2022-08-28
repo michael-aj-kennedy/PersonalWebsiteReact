@@ -58,7 +58,7 @@ export class Nav extends Component<IProps, IState> {
     }
 
     async getCategories() {
-        fetch('blog/categories')
+        fetch('/blog/categories')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(response.statusText)
