@@ -10,6 +10,11 @@
     <None Remove="Data\Articles\1.json" />
     <None Remove="Data\Articles\2.json" />
     <None Remove="Data\Articles\3.json" />
+    <None Remove="Data\Articles\4.json" />
+    <None Remove="Data\Articles\5.json" />
+    <None Remove="Data\Articles\6.json" />
+    <None Remove="Data\Articles\7.json" />
+    <None Remove="Data\Categories\3.json" />
     <None Remove="Data\index.json" />
     <None Remove="Data\Categories\1.json" />
     <None Remove="Data\Categories\2.json" />
@@ -29,6 +34,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Categories\3.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\index.json">

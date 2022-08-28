@@ -29,12 +29,14 @@ namespace PersonalWebsite.React.Controllers
             return categories;
         }
 
+        [HttpGet]
         [Route("articles")]
         public async Task<ActionResult<CategoryContent>> Articles()
         {
-            return await Articles("");
+            return await Articles(string.Empty);
         }
 
+        [HttpGet]
         [Route("articles/{search}")]
         public async Task<ActionResult<CategoryContent>> Articles(string search)
         {
@@ -46,6 +48,20 @@ namespace PersonalWebsite.React.Controllers
             }
 
             return articles;
+        }
+
+        [HttpGet]
+        [Route("article/{id}")]
+        public async Task<ActionResult<Article>> GetArticle(string id)
+        {
+            var article = await _dataReader.GetArticle(id);
+
+            if (article == null)
+            {
+                return NoContent();
+            }
+
+            return article;
         }
     }
 }

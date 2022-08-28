@@ -8,11 +8,6 @@ namespace PersonalWebsite.Data.Interfaces
         /// Executes read operation.
         /// </summary>
         /// <param name="articleSummary">Target article</param>
-        Task Read(IArticleSummary articleSummary);
-
-        /// <summary>
-        /// Article content.
-        /// </summary>
-        Article ArticleContent { get; }
+        Task<Article> Read(IArticleSummary articleSummary);
     }
 }

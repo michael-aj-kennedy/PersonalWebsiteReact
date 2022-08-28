@@ -16,11 +16,13 @@ namespace PersonalWebsite.Data.Readers
             _articleReader = articleReader;
         }
 
+        /// <inheritdoc/>
         public async Task<List<Category>> ReadCategories()
         {
             return await _indexReader.Read();
         }
 
+        /// <inheritdoc/>
         public async Task<CategoryContent> GetCategoryArticles(string search)
         {
             var categories = await _indexReader.Read();
@@ -125,9 +127,55 @@ namespace PersonalWebsite.Data.Readers
             return null;
         }
 
-        /*public async Task<ArticleContent> GetArticle(string search)
+        internal async Task<ArticleSummary?> FindArticleInCategory(string articleIdentifier, Category category)
         {
+            // open associated articles list
+            var categoryArticles = await _categoryReader.Read(category) ?? new List<ArticleSummary>();
 
-        }*/
+            // search for associated article by id
+            var targetArticle = categoryArticles.FirstOrDefault(a => a.Id.ToString() == articleIdentifier);
+
+            if (targetArticle == null)
+            {
+                targetArticle = categoryArticles.FirstOrDefault(a =>
+                    a.Title.Replace(" ", "-").Equals(articleIdentifier.Replace(" ", "-"), StringComparison.InvariantCultureIgnoreCase));
+            }
+
+            return targetArticle;
+        }
+
+        /// <inheritdoc/>
+        public async Task<Article> GetArticle(string articleIdentifier)
+        {
+            var categories = await _indexReader.Read();
+            var article = new Article();
+
+            if (categories != null &&
+                categories.Any() &&
+                !string.IsNullOrWhiteSpace(articleIdentifier))
+            {
+                ArticleSummary? summary = null;
+                foreach (var category in categories)
+                {
+                    summary = await FindArticleInCategory(articleIdentifier, category);
+
+                    if (summary != null)
+                    {
+                        break;
+                    }
+                }
+
+                if (summary != null)
+                {
+                    article = await _articleReader.Read(summary);
+                    if (article != null)
+                    {
+                        article.Summary = summary;
+                    }
+                }
+            }
+
+            return article ?? new Article();
+        }
     }
 }

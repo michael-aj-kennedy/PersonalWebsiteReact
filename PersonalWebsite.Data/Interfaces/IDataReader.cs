@@ -1,9 +1,4 @@
 ﻿using PersonalWebsite.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PersonalWebsite.Data.Interfaces
 {
@@ -21,5 +16,12 @@ namespace PersonalWebsite.Data.Interfaces
         /// <param name="search"></param>
         /// <returns></returns>
         Task<CategoryContent> GetCategoryArticles(string search);
+
+        /// <summary>
+        /// Get the full details of the specified article.
+        /// </summary>
+        /// <param name="articleIdentifier"></param>
+        /// <returns></returns>
+        Task<Article> GetArticle(string articleIdentifier);
     }
 }

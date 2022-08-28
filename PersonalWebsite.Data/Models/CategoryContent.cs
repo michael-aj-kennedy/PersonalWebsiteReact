@@ -17,6 +17,6 @@ namespace PersonalWebsite.Data.Models
         public int DefaultArticleId { get; set; }
 
         /// <inheritdoc/>
-        public string SearchCategoryName { get; set; }
+        public string SearchCategoryName { get; set; } = "";
     }
 }

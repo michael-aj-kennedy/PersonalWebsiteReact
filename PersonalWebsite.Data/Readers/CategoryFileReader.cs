@@ -1,6 +1,5 @@
 ﻿using PersonalWebsite.Data.Interfaces;
 using PersonalWebsite.Data.Models;
-using PersonalWebsite.Data.Readers;
 
 namespace PersonalWebsite.Data.Readers
 {

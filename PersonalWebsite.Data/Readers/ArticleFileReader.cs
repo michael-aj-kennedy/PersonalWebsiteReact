@@ -13,7 +13,7 @@ namespace PersonalWebsite.Data.Readers
         }
 
         /// <inheritdoc/>
-        public async Task Read(IArticleSummary articleSummary)
+        public async Task<Article> Read(IArticleSummary articleSummary)
         {
             if (!string.IsNullOrWhiteSpace(_searchLocation) &&
                 articleSummary != null &&
@@ -21,11 +21,10 @@ namespace PersonalWebsite.Data.Readers
             {
                 var fileName = $"{_searchLocation.TrimEnd('\\')}\\Articles\\{articleSummary.ArticleDataFile}";
                 var fileContent = await ReadJson(fileName);
-                ArticleContent = Deserialise(fileContent) ?? new Article();
+                return Deserialise(fileContent) ?? new Article();
             }
-        }
 
-        /// <inheritdoc/>
-        public Article ArticleContent { get; private set; } = new Article();
+            return new Article();
+        }
     }
 }
