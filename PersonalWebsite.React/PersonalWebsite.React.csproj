@@ -34,6 +34,8 @@
     <None Remove="client-app\public\favicon.ico" />
     <None Remove="client-app\src\aspnetcore-https.ts" />
     <None Remove="client-app\src\aspnetcore-react.ts" />
+    <None Remove="client-app\src\components\article\ArticleRoute.tsx" />
+    <None Remove="client-app\src\components\article\ArticleSummaryItem.tsx" />
     <None Remove="client-app\src\components\category\Category.tsx" />
     <None Remove="client-app\src\components\category\CategoryRoute.tsx" />
     <None Remove="client-app\src\components\header\Header.tsx" />
@@ -63,7 +65,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="client-app\src\components\article\" />
+    <Folder Include="client-app\public\css\" />
+    <Folder Include="client-app\public\js\" />
     <Folder Include="client-app\src\interfaces\data\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>

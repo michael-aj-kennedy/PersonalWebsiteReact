@@ -1,0 +1,11 @@
+﻿.article-summary-entry {
+    border-radius: 5px !important;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px 1px rgb(209 186 209 / 80%);
+    background-color: #fafafa;
+    border: solid 1px #d1d5d5;
+}
+
+.article-summary-entry.selected {
+    background-color: #ebebeb !important;
+}

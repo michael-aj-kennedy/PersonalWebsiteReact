@@ -1,49 +1,32 @@
 ﻿import React, { Component, ComponentType } from 'react';
 import { ArticleSummary } from '../../interfaces/data/articleSummary';
 import { CategoryContent } from '../../interfaces/data/categoryContent';
+import { ArticleRoute } from '../article/ArticleRoute';
+import { ArticleSummaryItem } from '../article/ArticleSummaryItem';
 import './Category.css';
-import { NavigateFunction, Params, useNavigate, useParams } from "react-router-dom";
-import { CategoryRoute } from './CategoryRoute';
 
 
 interface IProps {
     categoryContent: CategoryContent
 }
 
-interface IState {
-    //loading: boolean;
-}
+export function Category(props: IProps) {
+    const categoryContent = props.categoryContent;
 
-export class Category extends Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
-        /*this.state = {
-            loading: false
-        };*/
-    }
+    return (
+        <div className="category-container">
+            <ul className="article-list">
+                {categoryContent?.articleSummaries.map((articleSummary, index) => {
+                    const isFirst = index === 0;
+                    const isLast = index === categoryContent.articleSummaries.length - 1;
+                    const isSelected = articleSummary.id === (categoryContent?.defaultArticleId ?? 0);
 
-    componentDidMount() {
-        //this.getArticleSummaries(this.props.categoryName);
-    }
-
-    static renderArticleSummaries(categoryContent: CategoryContent | null) {
-        return (
-            <div className="category-container">
-                <div className="article-list">
-                    {categoryContent?.categoryName ?? ""}
-                </div>
-                <article className="article">
-                    {categoryContent?.defaultArticleId}
-                </article>
-            </div>
-        );
-    }
-
-    render() {
-        return (
-            <div>
-                {Category.renderArticleSummaries(this.props.categoryContent)}
-            </div>            
-        );
-    }
+                    return (
+                        <ArticleSummaryItem key={index} categoryName={categoryContent.searchCategoryName} isSelected={isSelected} isFirst={isFirst} isLast={isLast} articleSummary={articleSummary} />
+                    );
+                })}
+            </ul>
+            <ArticleRoute defaultArticleId={categoryContent?.defaultArticleId ?? 0} />
+        </div>
+    );
 }

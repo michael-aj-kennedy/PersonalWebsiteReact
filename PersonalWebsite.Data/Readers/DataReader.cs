@@ -92,32 +92,42 @@ namespace PersonalWebsite.Data.Readers
             return null;
         }
 
-        internal async Task<List<ArticleSummary>?> OverrideCategoryList(Category category)
-        {
-            if (category.OverrideArticleList)
-            {
-                var categories = await ReadCategories();
-                var overrideCategory = categories.FirstOrDefault(c => c.Id == category.OverrideArticleListCategoryId);
-                if (overrideCategory != null)
-                {
-                    return await _categoryReader.Read(overrideCategory);
-                }
-            }
-
-            return null;
-        }
-
         internal async Task<CategoryContent> GetCategoryContentResponse(Category category, List<ArticleSummary> articles, ArticleSummary? targetArticle)
         {
-            var overrideArticles = await OverrideCategoryList(category);
+            var overrideCategory = await GetOverrideCategory(category);
+            List<ArticleSummary>? overrideArticles = null;
+                
+            if (overrideCategory != null)
+            {
+                overrideArticles = await _categoryReader.Read(overrideCategory);
+            }
 
             return new CategoryContent()
             {
                 CategoryId = category.Id,
                 CategoryName = category.Name ?? "",
                 ArticleSummaries = (overrideArticles ?? articles).ToArray(),
-                DefaultArticleId = targetArticle?.Id ?? 0
+                DefaultArticleId = targetArticle?.Id ?? 0,
+                SearchCategoryName = overrideCategory != null && !string.IsNullOrWhiteSpace(overrideCategory.Name)
+                    ? overrideCategory.Name
+                    : category.Name ?? ""
             };
         }
+
+        internal async Task<Category?> GetOverrideCategory(Category category)
+        {
+            if (category.OverrideArticleList)
+            {
+                var categories = await ReadCategories();
+                return categories.FirstOrDefault(c => c.Id == category.OverrideArticleListCategoryId);
+            }
+
+            return null;
+        }
+
+        /*public async Task<ArticleContent> GetArticle(string search)
+        {
+
+        }*/
     }
 }

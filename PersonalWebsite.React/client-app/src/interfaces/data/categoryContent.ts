@@ -7,4 +7,5 @@ export interface CategoryContent {
     categoryName: string;
     articleSummaries: ArticleSummary[];
     defaultArticleId: number;
+    searchCategoryName: string;
 }
