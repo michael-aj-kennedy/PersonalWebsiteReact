@@ -1,9 +1,7 @@
-﻿import React, { Component, ComponentType } from 'react';
+﻿import React, { Component } from 'react';
 import { ArticleSummary } from '../../interfaces/data/articleSummary';
-import { CategoryContent } from '../../interfaces/data/categoryContent';
 import './ArticleSummaryItem.css';
-import Moment from 'moment';
-import { Link, NavigateFunction, Params, useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import moment from 'moment';
 
 

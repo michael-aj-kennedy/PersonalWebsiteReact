@@ -10,6 +10,7 @@
     padding-left: 0;
     list-style: none;
     overflow:visible;
+    padding-right:3px;
 }
 
 .category-route-container {
@@ -55,4 +56,11 @@
         min-height: 100% !important;
         overflow-y: visible !important;
     }
+}
+
+.copyright {
+    color: white;
+    text-align: right;
+    margin: 0 18px 20px 30px;
+    font-size: 12px;
 }

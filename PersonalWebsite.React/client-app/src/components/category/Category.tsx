@@ -1,5 +1,4 @@
-﻿import React, { Component, ComponentType } from 'react';
-import { ArticleSummary } from '../../interfaces/data/articleSummary';
+﻿import React from 'react';
 import { CategoryContent } from '../../interfaces/data/categoryContent';
 import { ArticleRoute } from '../article/ArticleRoute';
 import { ArticleSummaryItem } from '../article/ArticleSummaryItem';
@@ -14,6 +13,7 @@ interface IProps {
 
 export function Category(props: IProps) {
     const categoryContent = props.categoryContent;
+    const year = new Date().getFullYear();
 
     return (
         <div className="category-container">
@@ -29,6 +29,7 @@ export function Category(props: IProps) {
                         );
                     })}
                 </ul>
+                <div className="copyright"><i className="fal fa-copyright"></i> Michael Kennedy {year}. All rights reserved.</div>
             </SimpleBar>
             <ArticleRoute category={categoryContent.categoryId} defaultArticleId={categoryContent?.defaultArticleId ?? 0} />
         </div>

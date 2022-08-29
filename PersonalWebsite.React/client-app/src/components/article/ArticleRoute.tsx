@@ -20,6 +20,15 @@ export function ArticleRoute(props: IProps) {
                     `/blog/article/${articleId}`
                 );
                 setArticle(response.data);
+
+                var title = response.data?.summary?.title ?? "";
+                if (title) {
+                    document.title = `Michael Kennedy - ${title}`;
+                }
+                else {
+                    document.title = `Michael Kennedy`;
+                }
+                
             } catch (e) {
                 console.log(`Axios request failed! : ${e}`);
                 return e;

@@ -105,6 +105,9 @@ i.pinned-article {
     margin-right: -10px;
 }
 
+.article {
+    padding-left:1px;
+}
 
 .article .simplebar-track.simplebar-vertical {
     background-color: #e0e0e0 !important;

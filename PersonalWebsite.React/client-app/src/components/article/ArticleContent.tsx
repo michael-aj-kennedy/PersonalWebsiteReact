@@ -14,7 +14,7 @@ export function ArticleContent(props: IProps) {
     const articleImg = headerImagePath
         ? <img className="article-header-image" alt={props.article?.summary.title} src={`/${headerImagePath}`} />
         : null;
-
+    
     return (
         <article className="article">
             <div className="article-container border-full border-light">
