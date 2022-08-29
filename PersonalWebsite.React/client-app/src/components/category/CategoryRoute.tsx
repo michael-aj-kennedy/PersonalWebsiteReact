@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useParams } from "react-router-dom";
 import { Category } from './Category';
 import { CategoryContent } from '../../interfaces/data/categoryContent';
+import './Category.css';
 
 export function CategoryRoute() {
     const { category } = useParams();
@@ -29,7 +30,7 @@ export function CategoryRoute() {
         : <em>No content found</em>
 
     return (
-        <div>
+        <div className="category-route-container">
             {contents}
         </div>
     );

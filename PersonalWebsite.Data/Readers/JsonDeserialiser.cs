@@ -5,7 +5,7 @@ namespace PersonalWebsite.Data.Readers
 {
     public class JsonDeserialiser<T>
     {
-        internal async Task<string> ReadJson(string filePath)
+        internal async Task<string> ReadFile(string filePath)
         {
             var returnData = string.Empty;
 
@@ -17,12 +17,12 @@ namespace PersonalWebsite.Data.Readers
                 }
                 else
                 {
-                    Trace.TraceError($"JsonDeserialiser.ReadJson() : File {filePath} not found.");
+                    Trace.TraceError($"JsonDeserialiser.ReadFile() : File {filePath} not found.");
                 }
             }
             catch (Exception ex)
             {
-                Trace.TraceError($"JsonDeserialiser.ReadJson() : Error reading {filePath}.\r\n{ex}");
+                Trace.TraceError($"JsonDeserialiser.ReadFile() : Error reading {filePath}.\r\n{ex}");
             }
 
             return returnData;

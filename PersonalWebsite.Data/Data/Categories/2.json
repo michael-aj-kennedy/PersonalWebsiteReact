@@ -1,22 +1,134 @@
 [
   {
-    "id": 2,
-    "name": "blog 1",
-    "title": "Blog 1",
-    "summary": "blog 1",
+    "id": 10,
+    "name": "Missing Pieces",
+    "title": "Missing Pieces",
+    "summary": "A tribute to lost loved ones, for Claire...",
+    "hidden": true,
     "url": null,
     "pinned": false,
-    "date": "2000-01-02T00:00:00Z",
-    "articleDataFile": "2.json"
+    "date": "2020-01-01T00:00:00Z",
+    "headerImage": "Content/images/PostHeaders/MissingPiecesHeader.png",
+    "articleDataFile": "MissingPieces.html"
   },
   {
-    "id": 3,
-    "name": "blog 2",
-    "title": "Blog 2",
-    "summary": "blog 2",
+    "id": 11,
+    "name": "The Artistic Interpretation of Software",
+    "title": "The Artistic Interpretation of Software",
+    "summary": "I recently watch a television program that talked about how humanity is the only species on our planet that creates art.  The thing with art, is that the more you look for it, the more of it you see.",
+    "url": null,
+    "pinned": false,
+    "date": "2018-07-22T00:00:00Z",
+    "articleDataFile": "ArtisticSoftware.html"
+  },
+  {
+    "id": 14,
+    "name": "Navigating to the New World",
+    "title": "Navigating to the New World",
+    "summary": "A look at the roots of navigation within our applications, where it's going and the UX implications",
+    "url": null,
+    "pinned": false,
+    "date": "2018-09-01T00:00:00Z",
+    "headerImage": "Content/images/PostHeaders/NavigationHeader.png",
+    "articleDataFile": "NavigatingNewWorld.html"
+  },
+  {
+    "id": 15,
+    "name": "Lessons learnt from Google Inbox",
+    "title": "Lessons learnt from Google Inbox",
+    "summary": "Inbox by Gmail may be on the verge of being discontinued, but it teaches us a lot about product design, this article takes a look at the lessons it taught us.",
     "url": null,
     "pinned": true,
-    "date": "2000-01-03T00:00:00Z",
-    "articleDataFile": "3.json"
+    "date": "2018-09-22T00:00:00Z",
+    "headerImage": "Content/images/PostHeaders/Inbox.jpg",
+    "articleDataFile": "GoogleInbox.html"
+  },
+  {
+    "id": 16,
+    "name": "Grief-inspired design",
+    "title": "Grief-inspired design",
+    "summary": "Product design doesn't have anything in common with processing intense grief. Does it? Sometimes we have to be forced into taking a step back in order to see the obvious.",
+    "url": null,
+    "pinned": false,
+    "date": "2019-01-01T00:00:00Z",
+    "headerImage": "Content/images/GriefInspired/header.jpg",
+    "articleDataFile": "GriefInspired.html"
+  },
+  {
+    "id": 17,
+    "name": "Getting started with HTML email",
+    "title": "Getting started with HTML email",
+    "summary": "An examination of the basics of professional looking HTML based email",
+    "url": null,
+    "pinned": false,
+    "date": "2020-06-07T00:00:00Z",
+    "headerImage": "Content/images/HtmlEmail/header.jpg",
+    "articleDataFile": "GettingStartedWithHtmlEmail.html"
+  },
+  {
+    "id": 18,
+    "name": "HTML Email Editors: A Design Case Study",
+    "title": "HTML Email Editors: A Design Case Study",
+    "summary": "We all know of applications that allow experienced users to produce stunning responsive emails. However, it's rare to come across an HTML email editor that appeals to users with all experience levels, this article examines how to get the best of both worlds",
+    "url": null,
+    "pinned": false,
+    "date": "2021-01-02T00:00:00Z",
+    "headerImage": "Content/images/HtmlEditor/header.jpg",
+    "articleDataFile": "HtmlEmailEditorsDesignCaseStudy.html"
+  },
+  {
+    "id": 19,
+    "name": "Deep Breaths",
+    "title": "Deep Breaths",
+    "summary": "Poetry, tale of our trip to the coroners court.",
+    "url": null,
+    "pinned": false,
+    "date": "2018-01-20T00:00:00Z",
+    "headerImage": "Content/images/PostHeaders/DeepBreaths.jpeg",
+    "articleDataFile": "DeepBreaths.html"
+  },
+  {
+    "id": 1019,
+    "name": "Database Manager: Simplifying Database Upgrades",
+    "title": "Database Manager: Simplifying Database Upgrades",
+    "summary": "Database upgrade processes for corporate products can end up taking on a life of their own as each upgrade adds to the plethora of upgrade scripts. With older products this means that the upgrade process is so complex that the upgrade process itself may as well be considered a separate product in its own right.<br><br>When in Rome...",
+    "url": null,
+    "pinned": false,
+    "date": "2021-08-02T00:00:00Z",
+    "headerImage": "Content/images/DatabaseManager/header.png",
+    "articleDataFile": "DatabaseManager.html"
+  },
+  {
+    "id": 1020,
+    "name": "Securing User Logins with MVC and JWT",
+    "title": "Securing User Logins with MVC and JWT",
+    "summary": "Ensuring that an MVC application is fully secured can feel daunting. At first glance, the most important part of the login process is the login screen itself, and yes this is the natural starting point, but it's only the beginning.",
+    "url": "https://dev.to/mikekennedydev/securing-user-logins-with-mvc-jwt-tokens-4kcf",
+    "pinned": false,
+    "date": "2022-06-19T00:00:00Z",
+    "headerImage": "",
+    "articleDataFile": ""
+  },
+  {
+    "id": 1024,
+    "name": "Updating the Collation of an Existing MSSQL Database",
+    "title": "Updating the Collation of an Existing MSSQL Database",
+    "summary": "Changing a database collation doesn't need to be something we avoid at all costs.",
+    "url": "https://dev.to/oneadvanced/updating-database-collation-on-an-existing-mssql-database-2ap7",
+    "pinned": false,
+    "date": "2022-06-26T00:00:00Z",
+    "headerImage": "",
+    "articleDataFile": ""
+  },
+  {
+    "id": 1025,
+    "name": "Reusable MVC Razor Components with HTML Extension Methods",
+    "title": "Reusable MVC Razor Components with HTML Extension Methods",
+    "summary": "Component reuse an intrinsic feature of modern JavaScript frameworks. React, Angular & Vue guide us toward creating small, reusable components.  MVC Razor isn't as intuitive, but it's still possible to create something which is easy to use and maintain.",
+    "url": "https://dev.to/mikekennedydev/reusable-mvc-razor-components-with-html-extension-methods-2k8a",
+    "pinned": false,
+    "date": "2022-07-04T00:00:00Z",
+    "headerImage": "",
+    "articleDataFile": ""
   }
 ]

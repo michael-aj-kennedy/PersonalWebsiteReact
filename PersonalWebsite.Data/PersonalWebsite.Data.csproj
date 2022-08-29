@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\Articles\1.json" />
-    <None Remove="Data\Articles\2.json" />
-    <None Remove="Data\Articles\3.json" />
-    <None Remove="Data\Articles\4.json" />
-    <None Remove="Data\Articles\5.json" />
-    <None Remove="Data\Articles\6.json" />
-    <None Remove="Data\Articles\7.json" />
+    <None Remove="Data\Articles\about.html" />
+    <None Remove="Data\Articles\ArtisticSoftware.html" />
+    <None Remove="Data\Articles\GettingStartedWithHtmlEmail.html" />
+    <None Remove="Data\Articles\GoogleInbox.html" />
+    <None Remove="Data\Articles\GriefInspired.html" />
+    <None Remove="Data\Articles\MissingPieces.html" />
+    <None Remove="Data\Articles\NavigatingNewWorld.html" />
     <None Remove="Data\Categories\3.json" />
     <None Remove="Data\index.json" />
     <None Remove="Data\Categories\1.json" />
@@ -27,25 +27,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Data\Articles\1.json">
+    <Content Include="Data\Articles\about.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\2.json">
+    <Content Include="Data\Articles\MissingPieces.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\3.json">
+    <Content Include="Data\Articles\ArtisticSoftware.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\4.json">
+    <Content Include="Data\Articles\NavigatingNewWorld.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\5.json">
+    <Content Include="Data\Articles\GoogleInbox.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\6.json">
+    <Content Include="Data\Articles\GriefInspired.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\7.json">
+    <Content Include="Data\Articles\GettingStartedWithHtmlEmail.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Categories\3.json">

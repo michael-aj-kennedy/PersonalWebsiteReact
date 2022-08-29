@@ -13,7 +13,7 @@ namespace PersonalWebsite.Data.UnitTests.CategoryFileReader
             var filePath = "c:\thisfiledoesntexist.json";
 
             // act
-            var result = await deserialiser.ReadJson(filePath);
+            var result = await deserialiser.ReadFile(filePath);
 
             // assert
             Assert.IsEmpty(result);
@@ -27,7 +27,7 @@ namespace PersonalWebsite.Data.UnitTests.CategoryFileReader
             var filePath = $"{Environment.CurrentDirectory}\\Data\\categories.json";
 
             // act
-            var result = await deserialiser.ReadJson(filePath);
+            var result = await deserialiser.ReadFile(filePath);
 
             // assert
             Assert.IsNotEmpty(result);

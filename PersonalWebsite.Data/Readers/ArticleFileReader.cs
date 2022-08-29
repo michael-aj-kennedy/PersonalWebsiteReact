@@ -13,18 +13,18 @@ namespace PersonalWebsite.Data.Readers
         }
 
         /// <inheritdoc/>
-        public async Task<Article> Read(IArticleSummary articleSummary)
+        public async Task<string> Read(IArticleSummary articleSummary)
         {
             if (!string.IsNullOrWhiteSpace(_searchLocation) &&
                 articleSummary != null &&
                 !string.IsNullOrWhiteSpace(articleSummary.ArticleDataFile))
             {
                 var fileName = $"{_searchLocation.TrimEnd('\\')}\\Articles\\{articleSummary.ArticleDataFile}";
-                var fileContent = await ReadJson(fileName);
-                return Deserialise(fileContent) ?? new Article();
+                var fileContent = await ReadFile(fileName);
+                return fileContent ?? string.Empty;
             }
 
-            return new Article();
+            return string.Empty;
         }
     }
 }

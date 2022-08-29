@@ -5,7 +5,6 @@ import { ArticleRoute } from '../article/ArticleRoute';
 import { ArticleSummaryItem } from '../article/ArticleSummaryItem';
 import './Category.css';
 
-
 interface IProps {
     categoryContent: CategoryContent
 }

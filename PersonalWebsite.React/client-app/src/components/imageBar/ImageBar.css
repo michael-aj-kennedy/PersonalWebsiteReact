@@ -1,5 +1,6 @@
 ﻿.mk-sidebar {
-    width: 15%;
+    min-width: 230px;
+    max-width: 230px;
 }
 
 @media (max-width: 1400px) {

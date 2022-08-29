@@ -13,7 +13,14 @@
 }
 
 .mk-content {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.router-container {
     width:100%;
+    display:flex;
 }
 
 .hideMobile {

@@ -29,7 +29,7 @@ namespace PersonalWebsite.Data.Readers
                 !string.IsNullOrWhiteSpace(category.ArticleSource))
             {
                 var fileName = $"{_searchLocation.TrimEnd('\\')}\\Categories\\{category.ArticleSource}";
-                var fileContent = await ReadJson(fileName);
+                var fileContent = await ReadFile(fileName);
                 returnData = Deserialise(fileContent) ?? new List<ArticleSummary>();
             }
 

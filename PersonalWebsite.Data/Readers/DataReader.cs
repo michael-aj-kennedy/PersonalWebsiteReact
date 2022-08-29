@@ -167,11 +167,8 @@ namespace PersonalWebsite.Data.Readers
 
                 if (summary != null)
                 {
-                    article = await _articleReader.Read(summary);
-                    if (article != null)
-                    {
-                        article.Summary = summary;
-                    }
+                    article.Content = await _articleReader.Read(summary);
+                    article.Summary = summary;
                 }
             }
 

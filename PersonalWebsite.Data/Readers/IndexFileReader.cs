@@ -28,7 +28,7 @@ namespace PersonalWebsite.Data.Readers
         {
             if (!string.IsNullOrWhiteSpace(fileName))
             {
-                var fileContent = await ReadJson(fileName);
+                var fileContent = await ReadFile(fileName);
                 Categories = Deserialise(fileContent) ?? new List<Category>();
                 return Categories;
             }

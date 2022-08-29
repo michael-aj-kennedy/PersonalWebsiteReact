@@ -9,3 +9,8 @@
 .article-summary-entry.selected {
     background-color: #ebebeb !important;
 }
+
+.article:not(.container) {
+    width:100%;
+    overflow-y:scroll;
+}

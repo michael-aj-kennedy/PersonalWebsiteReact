@@ -41,5 +41,10 @@
         /// Indicates that an article is pinned to the top of the category list.
         /// </summary>
         bool Pinned { get; set; }
+
+        /// <summary>
+        /// Contains article header image.
+        /// </summary>
+        string HeaderImage { get; set; }
     }
 }
