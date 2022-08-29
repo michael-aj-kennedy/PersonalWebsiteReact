@@ -26,14 +26,23 @@
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="client-app\public\images\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="client-app\public\images\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="client-app\public\images\**" />
+    <EmbeddedResource Remove="client-app\public\images\**" />
+    <TypeScriptCompile Remove="client-app\public\images\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="client-app\public\favicon.ico" />
     <None Remove="client-app\src\aspnetcore-https.ts" />
     <None Remove="client-app\src\aspnetcore-react.ts" />
+    <None Remove="client-app\src\components\article\ArticleContent.tsx" />
     <None Remove="client-app\src\components\article\ArticleRoute.tsx" />
     <None Remove="client-app\src\components\article\ArticleSummaryItem.tsx" />
     <None Remove="client-app\src\components\category\Category.tsx" />
@@ -68,7 +77,7 @@
     <Folder Include="client-app\public\css\" />
     <Folder Include="client-app\public\js\" />
     <Folder Include="client-app\src\interfaces\data\" />
-    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

@@ -34,7 +34,7 @@ namespace PersonalWebsite.Data.Readers
             }
 
             return returnData
-                .OrderBy(s => s.Pinned)
+                .OrderByDescending(s => s.Pinned)
                 .ThenByDescending(s => s.Date)
                 .ToList();
         }

@@ -23,7 +23,7 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
 
     static renderArticleSummary(articleSummary: ArticleSummary) {
         const pinnedIcon = articleSummary.pinned
-            ? <i className="fal fa-thumbtack"></i>
+            ? <i className="pinned-article fal fa-thumbtack"></i>
             : null;
 
         const viewIcon = articleSummary.url
@@ -35,16 +35,16 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
             : null;
 
         return (
-            <div>
-                <div>
+            <div className="text-dark">
+                <div className="article-summary-header">
                     {pinnedIcon}
-                    <div>
-                        <span>{articleSummary.title}</span>
-                        <span>{formattedDate}</span>
+                    <div className="article-summary-title">
+                        <span className="title">{articleSummary.title}</span>
+                        <span className="posted">{formattedDate}</span>
                     </div>
                 </div>
-                <div>{articleSummary.summary}</div>
-                <div>
+                <div className="article-summary-description" dangerouslySetInnerHTML={{ __html: articleSummary.summary ?? "" }}></div>
+                <div className="article-summary-footer">
                     <i className={viewIcon}></i>
                 </div>
             </div>

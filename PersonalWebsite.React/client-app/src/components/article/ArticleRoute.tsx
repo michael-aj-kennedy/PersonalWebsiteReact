@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useParams } from "react-router-dom";
 import { Article } from '../../interfaces/data/article';
+import { ArticleContent } from './ArticleContent';
 
 interface IProps {
     category: number;
@@ -11,8 +12,6 @@ interface IProps {
 export function ArticleRoute(props: IProps) {
     const { id } = useParams();
     const [article, setArticle] = useState<Article>();
-
-    
 
     useEffect(() => {
         async function getArticle(articleId: string) {
@@ -27,18 +26,11 @@ export function ArticleRoute(props: IProps) {
             }
         }
         const targetArticleId = id ? id : props.defaultArticleId.toString();
-        console.log("***");
-        console.log(targetArticleId);
+
         getArticle(targetArticleId)
     }, [id, props])
 
     return (
-        <article className="article">
-            Category: {props.category}<br/>
-            Id: {id}<br/>
-            Default article id: {props.defaultArticleId}<br />
-            Read id: {article?.summary.id}<br />
-            <div dangerouslySetInnerHTML={{ __html: article?.content ?? "" }}></div>
-        </article>
+        <ArticleContent article={article} />
     );
 }

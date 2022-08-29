@@ -13,7 +13,9 @@ export class Header extends Component {
                     <div className="thumbnail hideMobile">
                         <Link to="/">
                             <div className="thumbnail-outer-border border-circular border-light">
-                                <img src={profile} />
+                                <div className="thumbnail-inner-border">
+                                    <img src={profile} />
+                                </div>
                             </div>
                         </Link>
                     </div>
