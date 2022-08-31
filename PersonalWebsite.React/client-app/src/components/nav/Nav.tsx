@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { Category } from './../../interfaces/data/category'
 import './Nav.css';
 
@@ -31,9 +31,11 @@ export class Nav extends Component<IProps, IState> {
 
                         return (
                             <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
-                                <Link to={`/${category.name}`}>
+                                <NavLink
+                                    className={({ isActive }) => isActive ? "selected" : ""}
+                                    to={`/${category.path}`}>
                                     {category.name}
-                                </Link>
+                                </NavLink>
                             </li>
                         );
                     

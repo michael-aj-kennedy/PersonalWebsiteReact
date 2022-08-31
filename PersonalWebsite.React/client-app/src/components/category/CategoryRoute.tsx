@@ -6,7 +6,7 @@ import { CategoryContent } from '../../interfaces/data/categoryContent';
 import './Category.css';
 
 export function CategoryRoute() {
-    const { category } = useParams();
+    const { category, id } = useParams();
     const [articles, setArticles] = useState<{ name: string, data: CategoryContent }>();
 
     useEffect(() => {
@@ -22,11 +22,12 @@ export function CategoryRoute() {
                 return e;
             }
         }
+        
         getArticleSummaries(category ?? "")
     }, [category])
-
+    
     let contents = articles && articles.data
-        ? <Category categoryContent={articles.data} />
+        ? <Category categoryContent={articles.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList ?? 0} />
         : <em>No content found</em>
 
     return (

@@ -15,6 +15,11 @@ namespace PersonalWebsite.Data.Interfaces
         string CategoryName { get; set; }
 
         /// <summary>
+        /// Indicates that the article list is being overridden.
+        /// </summary>
+        bool OverrideArticleList { get; set; }
+
+        /// <summary>
         /// Article summaries associated with category.
         /// </summary>
         ArticleSummary[] ArticleSummaries { get; set; }

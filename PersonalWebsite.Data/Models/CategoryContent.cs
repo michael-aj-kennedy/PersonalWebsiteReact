@@ -11,6 +11,9 @@ namespace PersonalWebsite.Data.Models
         public string CategoryName { get; set; } = "";
 
         /// <inheritdoc/>
+        public bool OverrideArticleList { get; set; }
+
+        /// <inheritdoc/>
         public ArticleSummary[] ArticleSummaries { get; set; } = new ArticleSummary[] {};
 
         /// <inheritdoc/>

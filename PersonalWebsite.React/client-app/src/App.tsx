@@ -19,6 +19,11 @@ function App() {
                             <Route path="/" element={<CategoryRoute />} />
                             <Route path="/:category" element={<CategoryRoute />} />
                             <Route path="/:category/:id" element={<CategoryRoute />} />
+
+                            <Route path="/About" element={<CategoryRoute />} />
+                            <Route path="/Blog/Entry/:category" element={<CategoryRoute />} />
+                            <Route path="/articles/blog/:category" element={<CategoryRoute />} />
+                            <Route path="/articles/cv/:category" element={<CategoryRoute />} />
                         </Routes>
                     </div>
                 </div>

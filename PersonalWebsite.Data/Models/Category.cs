@@ -13,6 +13,10 @@ namespace PersonalWebsite.Data.Models
         [JsonPropertyName("name")]
         public string Name { get; set; } = string.Empty;
 
+        /// <inheritdoc/>
+        [JsonPropertyName("path")]
+        public string Path { get; set; } = string.Empty;
+
         /// <summary>
         /// Indicates that the article list can be overridden.
         /// </summary>

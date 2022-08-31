@@ -108,6 +108,7 @@ namespace PersonalWebsite.Data.Readers
             {
                 CategoryId = category.Id,
                 CategoryName = category.Name ?? "",
+                OverrideArticleList = category.OverrideArticleList,
                 ArticleSummaries = (overrideArticles ?? articles).ToArray(),
                 DefaultArticleId = targetArticle?.Id ?? 0,
                 SearchCategoryName = overrideCategory != null && !string.IsNullOrWhiteSpace(overrideCategory.Name)

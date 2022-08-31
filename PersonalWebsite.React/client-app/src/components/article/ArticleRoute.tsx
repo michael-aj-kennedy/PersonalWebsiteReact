@@ -35,7 +35,7 @@ export function ArticleRoute(props: IProps) {
             }
         }
         const targetArticleId = id ? id : props.defaultArticleId.toString();
-
+        
         getArticle(targetArticleId)
     }, [id, props])
 

@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
 import { ArticleSummary } from '../../interfaces/data/articleSummary';
 import './ArticleSummaryItem.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import moment from 'moment';
 
 
@@ -11,13 +11,18 @@ interface IProps {
     isFirst: boolean;
     isLast: boolean;
     isSelected: boolean;
+    articleChanged: (id: number) => void;
 }
 
 interface IState {
-    //loading: boolean;
+    selected: boolean;
 }
 
 export class ArticleSummaryItem extends Component<IProps, IState> {
+    constructor(props: IProps) {
+        super(props);
+        this.state = { selected: props.isSelected };
+    }
 
     static renderArticleSummary(articleSummary: ArticleSummary) {
         const pinnedIcon = articleSummary.pinned
@@ -27,8 +32,8 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
         const viewIcon = articleSummary.url
             ? "fal fa-external-link"
             : "fal fa-chevron-double-right";
-
-        const formattedDate = articleSummary.date
+        
+        const formattedDate = articleSummary.date && new Date(articleSummary.date).getFullYear() > 2000
             ? `Posted ${moment(articleSummary.date).format("Do MMM YYYY")}`
             : null;
 
@@ -49,17 +54,20 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
         );
     }
 
+    articleClicked = () => {
+        this.props.articleChanged(this.props.articleSummary.id);
+    }
+
     render() {
-        const selected = this.props.isSelected ? "selected" : "";
         const articleSummary = this.props.articleSummary;
         const renderedSummary = ArticleSummaryItem.renderArticleSummary(articleSummary);
         const articleIdentifier = articleSummary.title.toLowerCase().replaceAll(" ", "-");
         const summary = articleSummary.url
             ? <a href={articleSummary.url} target="_blank" rel="noreferrer">{renderedSummary}</a>
-            : <Link to={`/${this.props.categoryName}/${articleIdentifier}`}>{renderedSummary}</Link>;
+            : <NavLink className={({ isActive }) => isActive || this.props.isSelected ? "selected" : ""} onClick={this.articleClicked} to={`/${this.props.categoryName}/${articleIdentifier}`}>{renderedSummary}</NavLink>;
 
         return (
-            <li className={`article-summary-entry ${selected} ${this.props.isFirst ? "first" : ""} ${this.props.isLast ? "last" : ""}`}>
+            <li className={`article-summary-entry ${this.props.isFirst ? "first" : ""} ${this.props.isLast ? "last" : ""}`}>
                 {summary}
             </li>
         );

@@ -30,11 +30,16 @@ li {
 }
 
 ul li:first-child {
-    border-radius: 0 0 10px;
     border-right: 1px solid #d1d5d5;
 }
 
-ul li:last-child {
+ul li:first-child,
+ul li:first-child a {
+    border-radius: 0 0 10px;
+}
+
+ul li:last-child,
+ul li:last-child a {
     border-radius: 0 0 0 10px;
 }
 

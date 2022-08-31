@@ -13,6 +13,11 @@
         string Name { get; set; }
 
         /// <summary>
+        /// Category URL.
+        /// </summary>
+        string Path { get; set; }
+
+        /// <summary>
         /// Indicates the id of the category used to override the article list.
         /// </summary>
         int? OverrideArticleListCategoryId { get; set; }
