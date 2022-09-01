@@ -110,7 +110,7 @@ namespace PersonalWebsite.Data.Readers
                 CategoryName = category.Name ?? "",
                 OverrideArticleList = category.OverrideArticleList,
                 ArticleSummaries = (overrideArticles ?? articles).ToArray(),
-                DefaultArticleId = targetArticle?.Id ?? 0,
+                DefaultArticleId = targetArticle?.Name?.Replace(" ", "-") ?? "",
                 SearchCategoryName = overrideCategory != null && !string.IsNullOrWhiteSpace(overrideCategory.Name)
                     ? overrideCategory.Name
                     : category.Name ?? ""

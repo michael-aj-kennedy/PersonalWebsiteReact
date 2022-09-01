@@ -16,14 +16,14 @@ function App() {
                     <Nav />
                     <div className="router-container">
                         <Routes>
-                            <Route path="/" element={<CategoryRoute />} />
-                            <Route path="/:category" element={<CategoryRoute />} />
-                            <Route path="/:category/:id" element={<CategoryRoute />} />
+                            <Route path="*" key="x" element={<CategoryRoute key="r1" />} />
+                            <Route path="/:category/*" key="y" element={<CategoryRoute key="r2" />} />
+                            {/*<Route path="/:category/:id" element={<CategoryRoute key="r3" />} />*/}
 
-                            <Route path="/About" element={<CategoryRoute />} />
-                            <Route path="/Blog/Entry/:category" element={<CategoryRoute />} />
-                            <Route path="/articles/blog/:category" element={<CategoryRoute />} />
-                            <Route path="/articles/cv/:category" element={<CategoryRoute />} />
+                            {/*<Route path="/About" element={<CategoryRoute />} />*/}
+                            {/*<Route path="/Blog/Entry/:category" element={<CategoryRoute />} />*/}
+                            {/*<Route path="/articles/blog/:category" element={<CategoryRoute />} />*/}
+                            {/*<Route path="/articles/cv/:category" element={<CategoryRoute />} />*/}
                         </Routes>
                     </div>
                 </div>

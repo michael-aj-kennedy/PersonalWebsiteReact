@@ -6,7 +6,7 @@ import { ArticleContent } from './ArticleContent';
 
 interface IProps {
     category: number;
-    defaultArticleId: number;
+    defaultArticleId: string;
 }
 
 export function ArticleRoute(props: IProps) {
@@ -14,11 +14,22 @@ export function ArticleRoute(props: IProps) {
     const [article, setArticle] = useState<Article>();
 
     useEffect(() => {
-        async function getArticle(articleId: string) {
+        async function getArticle(articleId: string, defaultArticleId: string) {
+            if (articleId === "" && defaultArticleId === "") {
+                return;
+            }
+            console.log({ articleId, defaultArticleId });
+
+            let targetArticleId = articleId;
+            if (!targetArticleId && props.defaultArticleId) {
+                targetArticleId = props.defaultArticleId;
+            }
+
             try {
                 const response = await axios.get(
-                    `/blog/article/${articleId}`
+                    `/blog/article/${targetArticleId}`
                 );
+
                 setArticle(response.data);
 
                 var title = response.data?.summary?.title ?? "";
@@ -28,16 +39,15 @@ export function ArticleRoute(props: IProps) {
                 else {
                     document.title = `Michael Kennedy`;
                 }
-                
+
             } catch (e) {
                 console.log(`Axios request failed! : ${e}`);
                 return e;
             }
         }
-        const targetArticleId = id ? id : props.defaultArticleId.toString();
         
-        getArticle(targetArticleId)
-    }, [id, props])
+        getArticle(id ?? "", props.defaultArticleId ?? "");
+    }, [id, props.defaultArticleId])
 
     return (
         <ArticleContent article={article} />

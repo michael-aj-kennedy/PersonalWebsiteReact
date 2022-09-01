@@ -7,6 +7,6 @@ export interface CategoryContent {
     categoryName: string;
     overrideArticleList: boolean;
     articleSummaries: ArticleSummary[];
-    defaultArticleId: number;
+    defaultArticleId: string;
     searchCategoryName: string;
 }

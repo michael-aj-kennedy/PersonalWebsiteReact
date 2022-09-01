@@ -17,7 +17,7 @@ namespace PersonalWebsite.Data.Models
         public ArticleSummary[] ArticleSummaries { get; set; } = new ArticleSummary[] {};
 
         /// <inheritdoc/>
-        public int DefaultArticleId { get; set; }
+        public string DefaultArticleId { get; set; }
 
         /// <inheritdoc/>
         public string SearchCategoryName { get; set; } = "";

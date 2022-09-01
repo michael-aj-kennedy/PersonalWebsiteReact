@@ -8,7 +8,7 @@ import './Category.css';
 export function CategoryRoute() {
     const { category, id } = useParams();
     const [articles, setArticles] = useState<{ name: string, data: CategoryContent }>();
-
+    
     useEffect(() => {
         // none of this is needed as we could just read the JSON directly, but I wanted to include usage of a REST API in this example code
         async function getArticleSummaries(categoryName: string) {
@@ -25,14 +25,17 @@ export function CategoryRoute() {
         
         getArticleSummaries(category ?? "")
     }, [category])
-    
-    let contents = articles && articles.data
-        ? <Category categoryContent={articles.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList ?? 0} />
-        : <em>No content found</em>
+
+    const hasArticleData = articles && articles.data; // && category === articles.name;
+
+    let contents = hasArticleData
+        ? <Category categoryContent={articles.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList} />
+        : <em>Loading</em>
+
 
     return (
         <div className="category-route-container">
-            {contents}
+            <Category categoryContent={articles?.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList ?? false} />
         </div>
     );
 }

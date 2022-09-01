@@ -27,7 +27,7 @@ namespace PersonalWebsite.Data.Interfaces
         /// <summary>
         /// First article to select.
         /// </summary>
-        int DefaultArticleId { get; set; }
+        string DefaultArticleId { get; set; }
 
         /// <summary>
         /// Category name that the article summary list is associated with.

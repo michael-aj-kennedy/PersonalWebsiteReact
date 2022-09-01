@@ -38,7 +38,6 @@ export class Nav extends Component<IProps, IState> {
                                 </NavLink>
                             </li>
                         );
-                    
                     })}
                 </ul>
             </nav>
