@@ -8,30 +8,27 @@ import './Category.css';
 export function CategoryRoute() {
     const { category, id } = useParams();
     const [articles, setArticles] = useState<{ name: string, data: CategoryContent }>();
-    
+    const currentCategory = articles?.name ?? ""
+
     useEffect(() => {
         // none of this is needed as we could just read the JSON directly, but I wanted to include usage of a REST API in this example code
         async function getArticleSummaries(categoryName: string) {
-            try {
-                const response = await axios.get(
-                    `/blog/articles/${categoryName}`
-                );
-                setArticles({ name: categoryName, data: response.data });
-            } catch (e) {
-                console.log(`Axios request failed! : ${e}`);
-                return e;
+            if (!categoryName || categoryName.toLowerCase() !== currentCategory.toLowerCase()) {
+                try {
+                    const response = await axios.get(
+                        `/blog/articles/${categoryName}`
+                    );
+                    
+                    setArticles({ name: categoryName, data: response.data });
+                } catch (e) {
+                    console.log(`Axios request failed! : ${e}`);
+                    return e;
+                }
             }
         }
         
         getArticleSummaries(category ?? "")
-    }, [category])
-
-    const hasArticleData = articles && articles.data; // && category === articles.name;
-
-    let contents = hasArticleData
-        ? <Category categoryContent={articles.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList} />
-        : <em>Loading</em>
-
+    }, [category, currentCategory])
 
     return (
         <div className="category-route-container">

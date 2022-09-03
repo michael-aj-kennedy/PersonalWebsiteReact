@@ -18,13 +18,12 @@ export function ArticleRoute(props: IProps) {
             if (articleId === "" && defaultArticleId === "") {
                 return;
             }
-            console.log({ articleId, defaultArticleId });
 
             let targetArticleId = articleId;
             if (!targetArticleId && props.defaultArticleId) {
                 targetArticleId = props.defaultArticleId;
             }
-
+            
             try {
                 const response = await axios.get(
                     `/blog/article/${targetArticleId}`
