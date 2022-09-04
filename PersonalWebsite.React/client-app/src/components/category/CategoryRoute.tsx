@@ -19,7 +19,10 @@ export function CategoryRoute() {
                         `/blog/articles/${categoryName}`
                     );
                     
-                    setArticles({ name: categoryName, data: response.data });
+                    setArticles({
+                        name: categoryName,
+                        data: response.data
+                    });
                 } catch (e) {
                     console.log(`Axios request failed! : ${e}`);
                     return e;
@@ -28,7 +31,7 @@ export function CategoryRoute() {
         }
         
         getArticleSummaries(category ?? "")
-    }, [category, currentCategory])
+    }, [category, currentCategory, id])
 
     return (
         <div className="category-route-container">

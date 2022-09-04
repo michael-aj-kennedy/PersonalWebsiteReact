@@ -16,3 +16,14 @@
 .socialLink {
     font-size:30px;
 }
+
+@media (max-width: 950px) {
+    .contact-container {
+        position: relative;
+        width:100%;
+    }
+
+    .contactLink {
+        padding: 0 7px;
+    }
+}

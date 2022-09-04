@@ -5,7 +5,6 @@ import { ImageBar } from './components/imageBar/ImageBar';
 import { Header } from './components/header/Header';
 import { CategoryRoute } from './components/category/CategoryRoute';
 import './App.css';
-import { Contact } from './components/contact/Contact';
 
 function App() {
     return (
@@ -21,7 +20,6 @@ function App() {
                             <Route path="/:category/*" key="y" element={<CategoryRoute key="r2" />} />
                         </Routes>
                     </div>
-                    <Contact />
                 </div>
             </div>
         </div>

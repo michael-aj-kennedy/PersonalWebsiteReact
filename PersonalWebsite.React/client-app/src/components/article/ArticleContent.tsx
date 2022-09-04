@@ -3,6 +3,7 @@ import { Article } from '../../interfaces/data/article';
 
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import { Contact } from '../contact/Contact';
 
 interface IProps {
     article: Article | undefined;
@@ -28,6 +29,7 @@ export function ArticleContent(props: IProps) {
                                 {articleImg}
                                 <div dangerouslySetInnerHTML={{ __html: props.article?.content ?? "" }}></div>
                             </div>
+                            <Contact />
                         </SimpleBar>
                     </div>
                 </div>

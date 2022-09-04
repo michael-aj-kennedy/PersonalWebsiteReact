@@ -148,3 +148,23 @@ i.pinned-article {
     width: 11px;
     left: 3px;
 }
+
+@media (max-width: 1125px) {
+    .article-content-text-container {
+        padding: 20px 60px 20px 50px;
+    }
+
+    .article-header-text {
+        padding-left:40px
+    }
+}
+
+@media (max-width: 950px) {
+    .article-content-text-container {
+        padding: 20px 30px 20px 20px;
+    }
+
+    .article-header-text {
+        padding-left: 10px;
+    }
+}
