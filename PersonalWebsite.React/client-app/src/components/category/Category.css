@@ -56,6 +56,22 @@
         min-height: 100% !important;
         overflow-y: visible !important;
     }
+
+    /* mobile user viewing an article */
+    .category-route-container.view-list .article {
+        display:none !important;
+    }
+    .category-route-container.view-list .article-list {
+        min-width: 100% !important;
+    }
+
+    /* mobile user viewing article list */
+    .category-route-container.view-article .article {
+        margin-left:15px !important;
+    }
+    .category-route-container.view-article .article-list {
+        display: none !important;
+    }
 }
 
 .copyright {

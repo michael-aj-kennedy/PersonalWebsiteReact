@@ -6,7 +6,9 @@ import { CategoryContent } from '../../interfaces/data/categoryContent';
 import './Category.css';
 
 export function CategoryRoute() {
-    const { category, id } = useParams();
+    const params = useParams();
+    const { category, id } = params;
+    const itemType = params['*'] || !category || category.toLowerCase() == "about" ? "view-article" : "view-list";
     const [articles, setArticles] = useState<{ name: string, data: CategoryContent }>();
     const currentCategory = articles?.name ?? ""
 
@@ -18,11 +20,8 @@ export function CategoryRoute() {
                     const response = await axios.get(
                         `/blog/articles/${categoryName}`
                     );
-                    
-                    setArticles({
-                        name: categoryName,
-                        data: response.data
-                    });
+
+                    setArticles({ name: categoryName, data: response.data });
                 } catch (e) {
                     console.log(`Axios request failed! : ${e}`);
                     return e;
@@ -31,10 +30,10 @@ export function CategoryRoute() {
         }
         
         getArticleSummaries(category ?? "")
-    }, [category, currentCategory, id])
+    }, [category, currentCategory])
 
     return (
-        <div className="category-route-container">
+        <div className={`category-route-container ${itemType}`}>
             <Category categoryContent={articles?.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList ?? false} />
         </div>
     );
