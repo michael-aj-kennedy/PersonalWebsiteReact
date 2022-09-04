@@ -1,0 +1,18 @@
+﻿.contact-container {
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    font-size: 30px;
+    width: 48px;
+}
+
+.contactLink {
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.socialLink {
+    font-size:30px;
+}

@@ -173,7 +173,7 @@ namespace PersonalWebsite.Data.Readers
                 }
             }
 
-            return article ?? new Article();
+            return article;
         }
     }
 }

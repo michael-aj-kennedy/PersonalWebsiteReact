@@ -28,7 +28,7 @@ export function ArticleRoute(props: IProps) {
                 const response = await axios.get(
                     `/blog/article/${targetArticleId}`
                 );
-
+                
                 setArticle(response.data);
 
                 var title = response.data?.summary?.title ?? "";

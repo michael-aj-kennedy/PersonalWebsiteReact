@@ -5,6 +5,7 @@ import { ImageBar } from './components/imageBar/ImageBar';
 import { Header } from './components/header/Header';
 import { CategoryRoute } from './components/category/CategoryRoute';
 import './App.css';
+import { Contact } from './components/contact/Contact';
 
 function App() {
     return (
@@ -18,14 +19,9 @@ function App() {
                         <Routes>
                             <Route path="*" key="x" element={<CategoryRoute key="r1" />} />
                             <Route path="/:category/*" key="y" element={<CategoryRoute key="r2" />} />
-                            {/*<Route path="/:category/:id" element={<CategoryRoute key="r3" />} />*/}
-
-                            {/*<Route path="/About" element={<CategoryRoute />} />*/}
-                            {/*<Route path="/Blog/Entry/:category" element={<CategoryRoute />} />*/}
-                            {/*<Route path="/articles/blog/:category" element={<CategoryRoute />} />*/}
-                            {/*<Route path="/articles/cv/:category" element={<CategoryRoute />} />*/}
                         </Routes>
                     </div>
+                    <Contact />
                 </div>
             </div>
         </div>

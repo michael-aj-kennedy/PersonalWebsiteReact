@@ -47,6 +47,7 @@
     <None Remove="client-app\src\components\article\ArticleSummaryItem.tsx" />
     <None Remove="client-app\src\components\category\Category.tsx" />
     <None Remove="client-app\src\components\category\CategoryRoute.tsx" />
+    <None Remove="client-app\src\components\contact\Contact.tsx" />
     <None Remove="client-app\src\components\header\Header.tsx" />
     <None Remove="client-app\src\components\Nav.tsx" />
   </ItemGroup>

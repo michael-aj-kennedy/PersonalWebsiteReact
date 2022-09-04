@@ -9,6 +9,8 @@
   <ItemGroup>
     <None Remove="Data\Articles\about.html" />
     <None Remove="Data\Articles\ArtisticSoftware.html" />
+    <None Remove="Data\Articles\DatabaseManager.html" />
+    <None Remove="Data\Articles\DeepBreaths.html" />
     <None Remove="Data\Articles\GettingStartedWithHtmlEmail.html" />
     <None Remove="Data\Articles\GoogleInbox.html" />
     <None Remove="Data\Articles\GriefInspired.html" />
@@ -29,6 +31,12 @@
   <ItemGroup>
     <Content Include="Data\Articles\about.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\DatabaseManager.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\DeepBreaths.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\MissingPieces.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
