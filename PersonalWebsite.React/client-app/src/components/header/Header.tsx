@@ -25,7 +25,7 @@ export class Header extends Component {
                                 <h1 className="mk-name">
                                     Michael Kennedy
                                 </h1>
-                                <h2 className="mk-degree hideMobile">
+                                <h2 className="mk-degree">
                                     Bsc (hons)
                                 </h2>
                             </div>
