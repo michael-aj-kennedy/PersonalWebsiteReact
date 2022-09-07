@@ -25,11 +25,13 @@ export function ArticleContent(props: IProps) {
                             <h2 className="article-header-text">{props.article?.summary.title}</h2>
                         </div>
                         <SimpleBar className="article-content-text">
-                            <div className="article-content-text-container">
-                                {articleImg}
-                                <div dangerouslySetInnerHTML={{ __html: props.article?.content ?? "" }}></div>
+                            <div className="article-contact">
+                                <div className="article-content-text-container">
+                                    {articleImg}
+                                    <div dangerouslySetInnerHTML={{ __html: props.article?.content ?? "" }}></div>
+                                </div>
+                                <Contact />
                             </div>
-                            <Contact />
                         </SimpleBar>
                     </div>
                 </div>

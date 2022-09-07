@@ -58,7 +58,7 @@ export class Contact extends Component<IProps, IState> {
         const links = this.state.links;
 
         return (
-            <div className="contact-container hideMobile">
+            <div className="contact-container">
                 {links.map((link) => {
                     return (
                         <span key={link.name}
