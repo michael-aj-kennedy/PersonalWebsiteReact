@@ -14,6 +14,7 @@
     <None Remove="Data\Articles\GettingStartedWithHtmlEmail.html" />
     <None Remove="Data\Articles\GoogleInbox.html" />
     <None Remove="Data\Articles\GriefInspired.html" />
+    <None Remove="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html" />
     <None Remove="Data\Articles\MissingPieces.html" />
     <None Remove="Data\Articles\NavigatingNewWorld.html" />
     <None Remove="Data\Categories\3.json" />
@@ -36,7 +37,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\DeepBreaths.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\MissingPieces.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
