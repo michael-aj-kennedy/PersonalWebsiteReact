@@ -7,9 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalWebsite.Data", "Per
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalWebsite.Data.UnitTests", "PersonalWebsite.Data.UnitTests\PersonalWebsite.Data.UnitTests.csproj", "{F94A90C2-EA20-4165-9F80-CEB423E80DC3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{70684BD0-3AF2-4DA6-8C09-E08B253CBAFA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebsite.React", "PersonalWebsite.React\PersonalWebsite.React.csproj", "{E57894DF-903E-4DF1-8A74-9CE07C0B31D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalWebsite.React", "PersonalWebsite.React\PersonalWebsite.React.csproj", "{E57894DF-903E-4DF1-8A74-9CE07C0B31D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{F94A90C2-EA20-4165-9F80-CEB423E80DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F94A90C2-EA20-4165-9F80-CEB423E80DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F94A90C2-EA20-4165-9F80-CEB423E80DC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70684BD0-3AF2-4DA6-8C09-E08B253CBAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70684BD0-3AF2-4DA6-8C09-E08B253CBAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70684BD0-3AF2-4DA6-8C09-E08B253CBAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70684BD0-3AF2-4DA6-8C09-E08B253CBAFA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E57894DF-903E-4DF1-8A74-9CE07C0B31D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E57894DF-903E-4DF1-8A74-9CE07C0B31D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E57894DF-903E-4DF1-8A74-9CE07C0B31D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
