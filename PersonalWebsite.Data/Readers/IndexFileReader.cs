@@ -8,8 +8,8 @@ namespace PersonalWebsite.Data.Readers
     /// </summary>
     public class IndexFileReader : JsonDeserialiser<List<Category>>, IIndexReader
     {
-        private const string FILE_NAME = "index.json";
-        private readonly string fileName = string.Empty;
+        internal const string FILE_NAME = "index.json";
+        internal readonly string fileName = string.Empty;
 
         /// <summary>
         /// Create a new instance of CategoryFileReader.
@@ -19,7 +19,7 @@ namespace PersonalWebsite.Data.Readers
         {
             if (!string.IsNullOrWhiteSpace(searchLocation))
             {
-                fileName = $"{searchLocation.TrimEnd('\\')}\\{FILE_NAME}";
+                fileName = $"{searchLocation.Trim().TrimEnd('\\')}\\{FILE_NAME}";
             }
         }
 
@@ -29,14 +29,10 @@ namespace PersonalWebsite.Data.Readers
             if (!string.IsNullOrWhiteSpace(fileName))
             {
                 var fileContent = await ReadFile(fileName);
-                Categories = Deserialise(fileContent) ?? new List<Category>();
-                return Categories;
+                return Deserialise(fileContent) ?? new List<Category>();
             }
 
             return new List<Category>();
         }
-
-        /// <inheritdoc/>
-        public List<Category> Categories { get; private set; } = new List<Category>();
     }
 }

@@ -1,12 +1,12 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using PersonalWebsite.Data.Models;
 using PersonalWebsite.Data.Readers;
 
 namespace PersonalWebsite.Data.UnitTests.JsonDeserialiser
 {
-    internal class JsonDeserialiser_Deserialise
+    public class JsonDeserialiser_Deserialise
     {
-        [Test]
+        [Fact]
         public void Deserialise_ReturnsObject()
         {
             // arrange
@@ -17,7 +17,7 @@ namespace PersonalWebsite.Data.UnitTests.JsonDeserialiser
             var result = deserialiser.Deserialise(exampleContent) ?? new List<Category>();
 
             // assert
-            Assert.IsTrue(result.Any());
+            Assert.True(result.Any());
         }
     }
 }

@@ -1,11 +1,11 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using PersonalWebsite.Data.Readers;
 
 namespace PersonalWebsite.Data.UnitTests.CategoryFileReader
 {
     public class CategoryFileReader_Ctor
     {
-        [Test]
+        [Fact]
         public async Task ReadFile_ReturnsEmptyStringIfInvalidPath()
         {
             // arrange
@@ -16,10 +16,10 @@ namespace PersonalWebsite.Data.UnitTests.CategoryFileReader
             var result = await deserialiser.ReadFile(filePath);
 
             // assert
-            Assert.IsEmpty(result);
+            Assert.Empty(result);
         }
 
-        [Test]
+        [Fact]
         public async Task ReadFile_ReturnsFileContent()
         {
             // arrange
@@ -30,7 +30,7 @@ namespace PersonalWebsite.Data.UnitTests.CategoryFileReader
             var result = await deserialiser.ReadFile(filePath);
 
             // assert
-            Assert.IsNotEmpty(result);
+            Assert.NotEmpty(result);
         }
     }
 }
