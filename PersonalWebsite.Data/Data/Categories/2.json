@@ -1,17 +1,5 @@
 [
   {
-    "id": 10,
-    "name": "Missing Pieces",
-    "title": "Missing Pieces",
-    "summary": "A tribute to lost loved ones, for Claire...",
-    "hidden": true,
-    "url": null,
-    "pinned": false,
-    "date": "2020-01-01T00:00:00Z",
-    "headerImage": "Content/images/PostHeaders/MissingPiecesHeader.png",
-    "articleDataFile": "MissingPieces.html"
-  },
-  {
     "id": 11,
     "name": "The Artistic Interpretation of Software",
     "title": "The Artistic Interpretation of Software",

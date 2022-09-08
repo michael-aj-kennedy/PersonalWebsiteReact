@@ -7,7 +7,7 @@
     "url": null,
     "pinned": false,
     "date": "2000-01-02T00:00:00Z",
-    "articleDataFile": "4.json"
+    "articleDataFile": "_test.html"
   },
   {
     "id": 5,
@@ -18,25 +18,5 @@
     "pinned": true,
     "date": "2000-01-03T00:00:00Z",
     "articleDataFile": "5.json"
-  },
-  {
-    "id": 6,
-    "name": "showcase 3",
-    "title": "Showcase 3",
-    "summary": "showcase 3 summary",
-    "url": null,
-    "pinned": true,
-    "date": "2000-01-03T00:00:00Z",
-    "articleDataFile": "6.json"
-  },
-  {
-    "id": 7,
-    "name": "showcase 4",
-    "title": "Showcase 4",
-    "summary": "showcase 4 summary",
-    "url": null,
-    "pinned": true,
-    "date": "2000-01-03T00:00:00Z",
-    "articleDataFile": "7.json"
   }
 ]

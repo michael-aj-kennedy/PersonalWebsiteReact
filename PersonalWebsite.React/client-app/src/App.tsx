@@ -5,6 +5,7 @@ import { ImageBar } from './components/imageBar/ImageBar';
 import { Header } from './components/header/Header';
 import { CategoryRoute } from './components/category/CategoryRoute';
 import './App.css';
+import './ArticleView.css';
 
 function App() {
     return (
