@@ -17,6 +17,13 @@
     height: 97px;
 }
 
+.nav-item,
+.nav-item > a,
+.article-summary-entry,
+.article-summary-entry {
+    text-decoration: none;
+}
+
 a.selected,
 a:hover,
 .nav-item > .selected,
@@ -24,6 +31,7 @@ a:hover,
 .article-summary-entry.selected,
 .article-summary-entry:hover{
     background-color: rgb(240,240,240) !important;
+    text-decoration:none;
 }
 
 .article:not(.container) {

@@ -57,6 +57,7 @@ article aside {
     font-style: italic;
     font-weight: 300;
     margin-bottom: 15px;
+    text-align:right;
 }
 
 article blockquote {
@@ -118,4 +119,10 @@ article thead td {
     font-weight: 600;
     font-size: 110%;
     padding-bottom: 3px;
+}
+
+article a {
+    font-weight: 500;
+    color: black;
+    text-decoration: underline !important;
 }
