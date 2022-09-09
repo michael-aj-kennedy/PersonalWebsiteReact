@@ -29,15 +29,25 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
             : null;
 
         let viewIcon = "";
-        if (!dummyEntry) {
+        if (!dummyEntry && (articleSummary.url || articleSummary.articleDataFile)) {
             viewIcon = articleSummary.url
                 ? "fal fa-external-link"
                 : "fal fa-chevron-double-right";
         }
-        
-        const formattedDate = articleSummary.date && new Date(articleSummary.date).getFullYear() > 2000
-            ? `Posted ${moment(articleSummary.date).format("Do MMM YYYY")}`
-            : null;
+
+        let formattedDate = "";
+
+        if (articleSummary.dateFrom || articleSummary.dateTo) {
+            formattedDate = articleSummary.dateFrom ?? "";
+
+            if (formattedDate && articleSummary.dateTo) {
+                formattedDate += " - ";
+            }
+            formattedDate += articleSummary.dateTo;
+        }
+        else if (articleSummary.date && new Date(articleSummary.date).getFullYear() > 2000) {
+            formattedDate = `Posted ${moment(articleSummary.date).format("Do MMM YYYY")}`;
+        }
 
         return (
             <div className="text-dark">
@@ -61,9 +71,17 @@ export class ArticleSummaryItem extends Component<IProps, IState> {
         const dummyEntry = articleSummary.id === 0;
         const renderedSummary = ArticleSummaryItem.renderArticleSummary(articleSummary, dummyEntry);
         const articleIdentifier = articleSummary.title.toLowerCase().replaceAll(" ", "-");
-        const summary = articleSummary.url
-            ? <a href={articleSummary.url} target="_blank" rel="noreferrer">{renderedSummary}</a>
-            : <NavLink className={({ isActive }) => isActive || this.props.isSelected ? "selected" : ""} to={`/${this.props.categoryName}/${articleIdentifier}`}>{renderedSummary}</NavLink>;
+        let summary = null;
+
+        if (articleSummary.url) {
+            summary = <a href={articleSummary.url} target="_blank" rel="noreferrer">{renderedSummary}</a>
+        }
+        else if (articleSummary.articleDataFile) {
+            summary = <NavLink className={({ isActive }) => isActive || this.props.isSelected ? "selected" : ""} to={`/${this.props.categoryName}/${articleIdentifier}`}>{renderedSummary}</NavLink>;
+        }
+        else {
+            summary = <div className="no-content">{renderedSummary}</div>;
+        }
 
         return (
             <li className={`article-summary-entry ${this.props.isFirst ? "first" : ""} ${this.props.isLast ? "last" : ""} ${dummyEntry ? "dummy" : ""}`}>

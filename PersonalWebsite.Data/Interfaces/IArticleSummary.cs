@@ -33,6 +33,16 @@
         DateTime? Date { get; set; }
 
         /// <summary>
+        /// Date from description.
+        /// </summary>
+        string DateFrom { get; set; }
+
+        /// <summary>
+        /// Date to description.
+        /// </summary>
+        string DateTo { get; set; }
+
+        /// <summary>
         /// Article data file.
         /// </summary>
         string ArticleDataFile { get; set; }

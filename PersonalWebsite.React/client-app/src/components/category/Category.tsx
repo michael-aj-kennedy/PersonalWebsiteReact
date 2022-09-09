@@ -28,7 +28,9 @@ const dummyArticleSummary: ArticleSummary = {
     summary: "",
     title: "",
     url: "",
-    date: undefined
+    date: undefined,
+    dateFrom: "",
+    dateTo: ""
 };
 
 export class Category extends Component<IProps, IState> {

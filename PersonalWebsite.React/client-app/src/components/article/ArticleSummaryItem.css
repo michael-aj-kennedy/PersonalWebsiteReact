@@ -9,6 +9,7 @@
     border-radius: 5px !important;
 }
 
+.article-summary-entry .no-content,
 .article-summary-entry a {
     padding-bottom: 25px;
 }
@@ -28,6 +29,7 @@ a.selected,
 a:hover,
 .nav-item > .selected,
 .nav-item > a:hover,
+.article-summary-entry .no-content,
 .article-summary-entry.selected,
 .article-summary-entry:hover{
     background-color: rgb(240,240,240) !important;

@@ -7,6 +7,8 @@ export interface ArticleSummary {
     summary: string;
     url: string;
     date?: Date;
+    dateFrom: string;
+    dateTo: string;
     articleDataFile: string;
     headerImage: string;
     pinned: boolean;

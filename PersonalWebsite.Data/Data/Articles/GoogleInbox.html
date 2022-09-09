@@ -1,44 +1,53 @@
-<div class="entry-content" style="max-width:650px; margin:auto;">
-<p><em>What Inbox by Gmail teaches us about Product Design.</em></p>
-<p>Inbox by Gmail has been a staple of my day-to-day routine and the routines of many others for the last four years.  Its design approach has been to email what the introduction of the ribbon bar was to windows applications.</p>
-<p>Its upcoming demise only serves to underline the impact it has had on its’ users and confirms what we all already knew – that nothing else out there does it in the same way.</p>
-<p>On the 12th of September, Google quietly announced the demise of Inbox by Gmail in a <a href="https://twitter.com/inboxbygmail/status/1039952354450309121" target="_blank">twitter post</a>.</p>
-<p>Inbox has directly inspired many of my application designs over the last couple of years, so with the tool being discontinued I wanted to examine just what it is that makes it so easy to use while packing in all of the required functionality.</p>
-<p><span style="text-decoration:underline;"><span style="font-size:115%;">Simplicity</span></span></p>
-<p>The success of Inbox is driven by its apparent simplicity.  Traditionally our email inboxes are cluttered, with a thousand things that need to be remembered and responded to.  The use of "negative space" within the design of the application immediately sets the user at ease, navigation and email components are separated out, the most important items rise to the top of the menu while the least important are hidden further away.</p>
-<p><img src="../../Content/Images/PostData/inboxwhitespace.jpg" style="width:100%;" sizes="(max-width: 648px) 100vw, 648px"></p>
-<p>The simplicity of the user interface moves beyond that of just showing of a bit of white-space, options to configure folders are hidden away, only being displayed when the users cursor movement implies their chosen course of action.  Overly complex configuration screens are consigned to the past while a relatively simplistic rules engine covers the majority of automated actions a user may wish to configure.</p>
-<p>The folder view offers the same kind of simplicity, mailings are grouped by the date received, separated by white-space.  Options are again hidden away until the users cursor movement indicates that they'd like to perform an action.</p>
-<p>Instead of the usual tri-view mail application (folders, content, email content) our content and email screens are merged into a single view.  While this reduces the users options in regards to quickly scrolling through a list of emails, it better lends itself to responsive web design.</p>
-<p><span style="text-decoration:underline;"><span style="font-size:115%;">Colour</span></span></p>
-<p>The simplistic interface is complimented by its' limited colour palette and basic icons that aren't dissimilar to those provided by Font Awesome; subtly colour coded and shaded to prevent the screen from looking too "over designed".  Application areas are colour coded using the same shades as their associated icons, these same colours indicate related operations throughout the application.</p>
-<p>Inbox recognises that it's just a vessel through which users access their email, the limited usage of colour allows the intended content to shine through.</p>
-<p><ul>
-<li><p>Where possible contacts are represented using profile icons (presumably taken from Google+ integration).</p></li>
-<li><p>Other contacts are represented using coloured profile icons which appear to be assigned depending on the alphanumeric character that the name of the sender starts with.</p></li>
-<li><p>Additional email specific items are displayed on an as-required basis, attachments, images are displayed within the folder content view not only providing users with at-a-glance information but breaking up the monotony of what would otherwise be a basic list of items.</p></li>
-</ul></p>
-<p><span style="text-decoration:underline;"><span style="font-size:115%;">Functionality</span></span></p>
-<p>The simplistic user interface is what initially draws users in, it's that approach which allows the well thought out functionality to shine through, taking Inbox from an email application into personal organiser territory.  It almost feels like an old style Filofax wrapped up in a single application.</p>
-<p><img src="../../Content/Images/PostData/filofax.jpg" style="width:100%;" sizes="(max-width: 648px) 100vw, 648px"></p>
-<p style="padding-left: 30px;"><span style="text-decoration: underline;">Personal Organiser</span></p>
-<p style="padding-left: 30px;">The most obvious feature of Inbox is the way it bundles together different mailings within the primary inbox.  This condenses larger mail boxes into a smaller footprint, I have 270 emails within my inbox, inboxes reduces that to just 19 records.</p>
-<p style="padding-left: 30px;">Condensing records down in this way could've easily been a hit-or-miss scenario, its success is simply down to its simplicity.  Existing user created folders form the bulk of email bundles, because they're inherited from users Gmail inbox they're effectively already setup and configured with various automated rules (nice little bit of leveraging existing functionality there).</p>
-<p style="padding-left: 30px;">Inbox cleverly expands upon this existing behaviour by adding a handful of preconfigured folders and rules which is underlined with the ability to automatically file related emails outside of the inbox.</p>
-<p style="padding-left: 30px;"><span style="text-decoration: underline;">Reminders</span></p>
-<p style="padding-left: 30px;">Reminders are generally restricted to calendar applications, but Inbox cleverly considers the definition of what a reminder actually is and applies the concept to emails, enabling an email to be hidden from the inbox reappearing at the top at a chosen time.  It's such a simplistic concept that it really should have been commonly in use long before now.</p>
-<p style="padding-left: 30px;">The ability to create reminders without being associated to an email is itself an extension of that behaviour within the mailbox, it merely serves to blend the lines between different applications.</p>
-<p style="padding-left: 30px;"><span style="text-decoration: underline;">Saved Articles</span></p>
-<p style="padding-left: 30px;">Expanding on the concept of common day-to-day operations, Inbox provides users with the ability to save bookmarks directly to the inbox.  The ability to paste a URL directly into the inbox simplifies life for anyone performing research tasks across multiple sessions.  As a software developer, the number of times I find something useful outside of office hours is significant and the ability to just paste a link into my inbox is invaluable.</p>
-<p style="padding-left: 30px;">Combining this feature with the existing reminder functionality is a stroke of genius - add a URL to my email at 10pm and snooze it until I'm in the office the next morning so that I won't forget to investigate.</p>
-<p style="padding-left: 30px;">Something so simple can have such a massive effect on a users time management and planning processes, cleverly topped off with the ability to paste straight from the clipboard in both windows and mobile applications.</p>
-<p style="padding-left: 30px;"><span style="text-decoration: underline;">Email Engagement</span></p>
-<p style="padding-left: 30px;">Inbox makes extended use of schema.org <a href="https://developers.google.com/gmail/markup/overview">email markup</a> to find and display key information points to users without the need to fully open an email.  Again, this is such a simple UI feature, but the difference it makes is immeasurable.</p>
-<p style="padding-left: 30px;">Expanded email markup integration is drawn together with automatic bundling, making use of the ability to define flight and reservation data in a single place.</p>
-<p><span style="text-decoration: underline;"><span style="font-size: 115%;">Summary</span></span></p>
+<div class="article-container">
+    <div class="summary">What Inbox by Gmail teaches us about Product Design.</div>
+    <div class="content">
+		<p>Inbox by Gmail has been a staple of my day-to-day routine and the routines of many others for the last four years.  Its design approach has been to email what the introduction of the ribbon bar was to windows applications.</p>
+		<p>Its upcoming demise only serves to underline the impact it has had on its’ users and confirms what we all already knew – that nothing else out there does it in the same way.</p>
+		<p>On the 12th of September, Google quietly announced the demise of Inbox by Gmail in a <a href="https://twitter.com/inboxbygmail/status/1039952354450309121" target="_blank">twitter post</a>.</p>
+		<p>Inbox has directly inspired many of my application designs over the last couple of years, so with the tool being discontinued I wanted to examine just what it is that makes it so easy to use while packing in all of the required functionality.</p>
+		
+		<h2>Simplicity</h2>
+		<p>The success of Inbox is driven by its apparent simplicity.  Traditionally our email inboxes are cluttered, with a thousand things that need to be remembered and responded to.  The use of "negative space" within the design of the application immediately sets the user at ease, navigation and email components are separated out, the most important items rise to the top of the menu while the least important are hidden further away.</p>
+		<img src="/Content/Images/PostData/inboxwhitespace.jpg" />
+		<p>The simplicity of the user interface moves beyond that of just showing of a bit of white-space, options to configure folders are hidden away, only being displayed when the users cursor movement implies their chosen course of action.  Overly complex configuration screens are consigned to the past while a relatively simplistic rules engine covers the majority of automated actions a user may wish to configure.</p>
+		<p>The folder view offers the same kind of simplicity, mailings are grouped by the date received, separated by white-space.  Options are again hidden away until the users cursor movement indicates that they'd like to perform an action.</p>
+		<p>Instead of the usual tri-view mail application (folders, content, email content) our content and email screens are merged into a single view.  While this reduces the users options in regards to quickly scrolling through a list of emails, it better lends itself to responsive web design.</p>		
 
-<p>Google examined the concept of email and whittled it down to the basic features, then they carefully thought about what an email application should actually contain and how it could be moulded to improve peoples lives.</p>
-<p>This approach gave us a fresh take on email management, removing clutter and focusing on functionality.  This was something of a bold move for applications of this nature which traditionally look a certain way, squeezing as much onto the screen as possible.  It challenged preconceptions, encouraging users to think differently about organisation, of their daily tasks</p>
-<p>From a technical standpoint, with a little extra data processing, the expanded features offered by Inbox by Gmail are actually pretty simplistic.  The true power behind these features comes from the way they're presented, Inbox cleverly walks the line between complex features and simple interfaces by making careful use of white-space and hiding features away without compromising discoverability.</p>
-<p>If other developers took this same approach novice users would find it infinitely easier to get to grips with new applications while advanced features are quietly sat there waiting to be discovered.</p>
+		<h2>Colour</h2>
+		<p>The simplistic interface is complimented by its' limited colour palette and basic icons that aren't dissimilar to those provided by Font Awesome; subtly colour coded and shaded to prevent the screen from looking too "over designed".  Application areas are colour coded using the same shades as their associated icons, these same colours indicate related operations throughout the application.</p>
+		<p>Inbox recognises that it's just a vessel through which users access their email, the limited usage of colour allows the intended content to shine through.</p>
+		<ul>
+			<li>Where possible contacts are represented using profile icons (presumably taken from Google+ integration).</li>
+			<li>Other contacts are represented using coloured profile icons which appear to be assigned depending on the alphanumeric character that the name of the sender starts with.</li>
+			<li>Additional email specific items are displayed on an as-required basis, attachments, images are displayed within the folder content view not only providing users with at-a-glance information but breaking up the monotony of what would otherwise be a basic list of items.</li>
+		</ul>
+
+		<h2>Functionality</h2>
+		<p>The simplistic user interface is what initially draws users in, it's that approach which allows the well thought out functionality to shine through, taking Inbox from an email application into personal organiser territory.  It almost feels like an old style Filofax wrapped up in a single application.</p>
+		<img src="/Content/Images/PostData/filofax.jpg" />
+		
+		<p><h3>Personal Organiser&nbsp;</h3>
+		The most obvious feature of Inbox is the way it bundles together different mailings within the primary inbox.  This condenses larger mail boxes into a smaller footprint, I have 270 emails within my inbox, inboxes reduces that to just 19 records.</p>
+		<p>Condensing records down in this way could've easily been a hit-or-miss scenario, its success is simply down to its simplicity.  Existing user created folders form the bulk of email bundles, because they're inherited from users Gmail inbox they're effectively already setup and configured with various automated rules (nice little bit of leveraging existing functionality there).</p>
+		<p>Inbox cleverly expands upon this existing behaviour by adding a handful of preconfigured folders and rules which is underlined with the ability to automatically file related emails outside of the inbox.</p>
+
+		<p><h3>Reminders&nbsp</h3>
+		Reminders are generally restricted to calendar applications, but Inbox cleverly considers the definition of what a reminder actually is and applies the concept to emails, enabling an email to be hidden from the inbox reappearing at the top at a chosen time.  It's such a simplistic concept that it really should have been commonly in use long before now.</p>
+		<p>The ability to create reminders without being associated to an email is itself an extension of that behaviour within the mailbox, it merely serves to blend the lines between different applications.</p>
+
+		<p><h3>Saved Articles&nbsp</h3>
+		Expanding on the concept of common day-to-day operations, Inbox provides users with the ability to save bookmarks directly to the inbox.  The ability to paste a URL directly into the inbox simplifies life for anyone performing research tasks across multiple sessions.  As a software developer, the number of times I find something useful outside of office hours is significant and the ability to just paste a link into my inbox is invaluable.</p>
+		<p>Combining this feature with the existing reminder functionality is a stroke of genius - add a URL to my email at 10pm and snooze it until I'm in the office the next morning so that I won't forget to investigate.</p>
+		<p>Something so simple can have such a massive effect on a users time management and planning processes, cleverly topped off with the ability to paste straight from the clipboard in both windows and mobile applications.</p>
+
+		<p><h3>Email Engagement&nbsp</h3>
+		Inbox makes extended use of schema.org <a href="https://developers.google.com/gmail/markup/overview" target="_blank">email markup</a> to find and display key information points to users without the need to fully open an email.  Again, this is such a simple UI feature, but the difference it makes is immeasurable.</p>
+		<p>Expanded email markup integration is drawn together with automatic bundling, making use of the ability to define flight and reservation data in a single place.</p>
+		
+		<h2>Summary</h2>
+		<p>Google examined the concept of email and whittled it down to the basic features, then they carefully thought about what an email application should actually contain and how it could be moulded to improve peoples lives.</p>
+		<p>This approach gave us a fresh take on email management, removing clutter and focusing on functionality.  This was something of a bold move for applications of this nature which traditionally look a certain way, squeezing as much onto the screen as possible.  It challenged preconceptions, encouraging users to think differently about organisation, of their daily tasks</p>
+		<p>From a technical standpoint, with a little extra data processing, the expanded features offered by Inbox by Gmail are actually pretty simplistic.  The true power behind these features comes from the way they're presented, Inbox cleverly walks the line between complex features and simple interfaces by making careful use of white-space and hiding features away without compromising discoverability.</p>
+		<p>If other developers took this same approach novice users would find it infinitely easier to get to grips with new applications while advanced features are quietly sat there waiting to be discovered.</p>		
+    </div>
 </div>

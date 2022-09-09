@@ -33,6 +33,14 @@ namespace PersonalWebsite.Data.Models
         public DateTime? Date { get; set; } = null;
 
         /// <inheritdoc/>
+        [JsonPropertyName("dateFrom")]
+        public string DateFrom { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        [JsonPropertyName("dateTo")]
+        public string DateTo { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
         [JsonPropertyName("articleDataFile")]
         public string ArticleDataFile { get; set; } = string.Empty;
 

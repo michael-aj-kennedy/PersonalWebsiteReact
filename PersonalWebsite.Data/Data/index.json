@@ -26,6 +26,6 @@
     "name": "Experience",
     "path": "experience",
     "overrideArticleList": false,
-    "articleSource": "4.json"
+    "articleSource": "experience.json"
   }
 ]
