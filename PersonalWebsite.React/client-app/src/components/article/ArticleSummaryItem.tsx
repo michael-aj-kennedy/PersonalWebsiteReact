@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
 import { ArticleSummary } from '../../interfaces/data/articleSummary';
 import './ArticleSummaryItem.css';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import moment from 'moment';
 
 

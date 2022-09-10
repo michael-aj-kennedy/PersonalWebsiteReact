@@ -14,7 +14,7 @@ export class Header extends Component {
                         <Link to="/">
                             <div className="thumbnail-outer-border border-circular border-light">
                                 <div className="thumbnail-inner-border">
-                                    <img src={profile} />
+                                    <img src={profile} alt="Profile" />
                                 </div>
                             </div>
                         </Link>

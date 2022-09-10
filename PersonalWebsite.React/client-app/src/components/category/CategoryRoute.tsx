@@ -8,7 +8,7 @@ import './Category.css';
 export function CategoryRoute() {
     const params = useParams();
     const { category, id } = params;
-    const itemType = params['*'] || !category || category.toLowerCase() == "about" ? "view-article" : "view-list";
+    const itemType = params['*'] || !category || category.toLowerCase() === "about" ? "view-article" : "view-list";
     const [articles, setArticles] = useState<{ name: string, data: CategoryContent }>();
     const currentCategory = articles?.name ?? ""
 
