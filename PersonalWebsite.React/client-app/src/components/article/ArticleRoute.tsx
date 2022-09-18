@@ -39,6 +39,11 @@ export function ArticleRoute(props: IProps) {
                     document.title = `Michael Kennedy`;
                 }
 
+                var scroller = document.querySelector(".article-content .simplebar-content-wrapper");
+                if (scroller != null) {
+                    scroller.scrollTo(0, 0);
+                }
+
             } catch (e) {
                 console.log(`Axios request failed! : ${e}`);
                 return e;
