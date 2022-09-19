@@ -28,11 +28,10 @@ export function ArticleRoute(props: IProps) {
                 const response = await axios.get(
                     `/blog/article/${targetArticleId}`
                 );
-                
+
                 setArticle(response.data);
                 setDocumentTitle(response.data?.summary?.title ?? "");
                 scrollToTop();
-
             } catch (e) {
                 console.log(`Axios request failed! : ${e}`);
                 return e;

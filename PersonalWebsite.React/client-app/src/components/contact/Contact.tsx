@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import ReactGA from 'react-ga4';
 import './Contact.css';
 
 class SocialLink {
@@ -9,8 +10,9 @@ class SocialLink {
 }
 
 export class Contact extends Component {
-    clickSocialLink = (url: string, newWindow: boolean) => {
+    clickSocialLink = (url: string, name:string, newWindow: boolean) => {
         window.open(url, newWindow ? '_blank' : 'self', 'noopener,noreferrer');
+        ReactGA.send({ hitType: "pageview", page: `Social\\${name}`, title: `Social\\${name}` });
     };
 
     getLinks = (): SocialLink[] => {
@@ -53,7 +55,7 @@ export class Contact extends Component {
                     return (
                         <span key={link.name}
                             className="contactLink emailIcon"
-                            onClick={() => this.clickSocialLink(link.url, link.newWindow)}>
+                            onClick={() => this.clickSocialLink(link.url, link.name, link.newWindow)}>
                             <span>
                                 <span
                                     className={`socialLink ${link.iconClass}`}

@@ -6,8 +6,11 @@ import { Header } from './components/header/Header';
 import { CategoryRoute } from './components/category/CategoryRoute';
 import './App.css';
 import './ArticleView.css';
+import ReactGA from 'react-ga4';
 
 function App() {
+    ReactGA.initialize("G-N75D61W7R1");
+
     return (
         <div className="mk-app">
             <ImageBar />

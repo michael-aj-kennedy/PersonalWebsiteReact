@@ -1,6 +1,5 @@
 ﻿import React from 'react';
 import { Article } from '../../interfaces/data/article';
-
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import { Contact } from '../contact/Contact';
@@ -15,7 +14,7 @@ export function ArticleContent(props: IProps) {
     const articleImg = headerImagePath
         ? <img className="article-header-image" alt={props.article?.summary.title} src={`/${headerImagePath}`} />
         : null;
-    
+
     return (
         <article className="article">
             <div className="article-container border-full border-light">
