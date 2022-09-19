@@ -5,7 +5,8 @@ import profile from './../../images/mk2.jpg'
 
 export class Header extends Component {
     render() {
-        const yearsExperience = new Date().getFullYear() - 2006
+        const startYear = 2006;
+        const yearsExperience = new Date().getFullYear() - startYear;
 
         return (
             <header className="mk-header">

@@ -30,19 +30,8 @@ export function ArticleRoute(props: IProps) {
                 );
                 
                 setArticle(response.data);
-
-                var title = response.data?.summary?.title ?? "";
-                if (title) {
-                    document.title = `Michael Kennedy - ${title}`;
-                }
-                else {
-                    document.title = `Michael Kennedy`;
-                }
-
-                var scroller = document.querySelector(".article-content .simplebar-content-wrapper");
-                if (scroller != null) {
-                    scroller.scrollTo(0, 0);
-                }
+                setDocumentTitle(response.data?.summary?.title ?? "");
+                scrollToTop();
 
             } catch (e) {
                 console.log(`Axios request failed! : ${e}`);
@@ -52,6 +41,22 @@ export function ArticleRoute(props: IProps) {
         
         getArticle(id ?? "", props.defaultArticleId ?? "");
     }, [id, props.defaultArticleId])
+
+    function setDocumentTitle(title: string) {
+        if (title) {
+            document.title = `Michael Kennedy - ${title}`;
+        }
+        else {
+            document.title = `Michael Kennedy`;
+        }
+    }
+
+    function scrollToTop() {
+        var scroller = document.querySelector(".article-content .simplebar-content-wrapper");
+        if (scroller != null) {
+            scroller.scrollTo(0, 0);
+        }
+    }
 
     return (
         <ArticleContent article={article} />
