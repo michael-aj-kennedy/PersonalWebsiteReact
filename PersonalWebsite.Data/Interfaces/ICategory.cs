@@ -31,5 +31,15 @@
         /// Indicates that the category should be selected by default.
         /// </summary>
         bool Default { get; set; }
+
+        /// <summary>
+        /// Hides display of article list.
+        /// </summary>
+        bool HideArticleList { get; set; }
+
+        /// <summary>
+        /// Hides category in mobile view.
+        /// </summary>
+        bool HideMobile { get; set; }
     }
 }

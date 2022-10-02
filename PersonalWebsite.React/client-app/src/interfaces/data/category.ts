@@ -6,6 +6,8 @@ export interface Category {
     path: string;
     overrideArticleList: boolean;
     overrideArticleListCategoryId?: number;
+    hideArticleList: boolean;
+    hideMobile: boolean;
     articleSource: string;
     default: boolean;
 }

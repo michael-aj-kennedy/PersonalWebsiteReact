@@ -30,7 +30,7 @@ export class Nav extends Component<IProps, IState> {
                         const isLast = index === categories.length - 1;
 
                         return (
-                            <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""}`} key={category.id}>
+                            <li className={`nav-item ${isFirst ? "first" : ""} ${isLast ? "last" : ""} ${category.hideMobile ? "hideMobile" : ""}`} key={category.id}>
                                 <NavLink
                                     className={({ isActive }) => isActive ? "selected" : ""}
                                     to={`/${category.path}`}>

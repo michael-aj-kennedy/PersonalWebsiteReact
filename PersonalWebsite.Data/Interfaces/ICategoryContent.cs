@@ -33,5 +33,10 @@ namespace PersonalWebsite.Data.Interfaces
         /// Category name that the article summary list is associated with.
         /// </summary>
         string SearchCategoryName { get; set; }
+
+        /// <summary>
+        /// Indicates that the article list will be hidden.
+        /// </summary>
+        public bool HideArticleList { get; set; }
     }
 }

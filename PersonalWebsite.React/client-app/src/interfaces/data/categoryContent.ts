@@ -9,4 +9,5 @@ export interface CategoryContent {
     articleSummaries: ArticleSummary[];
     defaultArticleId: string;
     searchCategoryName: string;
+    hideArticleList: boolean;
 }

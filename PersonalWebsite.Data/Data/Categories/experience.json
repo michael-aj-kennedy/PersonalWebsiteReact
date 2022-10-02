@@ -1,69 +1,12 @@
 [
   {
-    "id": 50001,
-    "name": "tikit-senior-developer",
-    "title": "Tikit Limited - Senior Software Developer",
-    "summary": "",
+    "id": 5000,
+    "name": "experience",
+    "title": "Experience",
+    "summary": "Experience summary",
     "url": null,
     "pinned": false,
-    "date": "2018-08-01T00:00:00Z",
-    "dateFrom": "August 2018",
-    "dateTo": "Date",
-    "articleDataFile": "advanced-senior-developer.html"
-  },
-  {
-    "id": 50002,
-    "name": "tikit-analyst-programmer",
-    "title": "Tikit Limited - Analyst Programmer",
-    "summary": "",
-    "url": null,
-    "date": "2011-08-01T00:00:00Z",
-    "dateFrom": "August 2011",
-    "dateTo": "August 2018",
-    "articleDataFile": "tikit-analyst-programmer.html"
-  },
-  {
-    "id": 50003,
-    "name": "tikit-technical-consultant",
-    "title": "Tikit Limited - Technical Consultant",
-    "summary": "",
-    "url": null,
-    "date": "2008-05-01T00:00:00Z",
-    "dateFrom": "May 2008",
-    "dateTo": "July 2011",
-    "articleDataFile": "tikit-technical-consultant.html"
-  },
-  {
-    "id": 50004,
-    "name": "jupiter-migration-engineer",
-    "title": "Jupiter Systems - Data Migration Engineer",
-    "summary": "",
-    "url": null,
-    "date": "2007-02-01T00:00:00Z",
-    "dateFrom": "February 2007",
-    "dateTo": "May 2008",
-    "articleDataFile": "jupiter-migration-engineer.html"
-  },
-  {
-    "id": 50005,
-    "name": "jupiter-support-engineer",
-    "title": "Jupiter Systems - Support Engineer",
-    "summary": "Provided first and second line support to ≈ 700 veterinary practices dealing with both hardware and software issues.<br/>Visited a number of client sites to assist with system upgrades.",
-    "url": null,
-    "date": "2006-04-01T00:00:00Z",
-    "dateFrom": "April 2006",
-    "dateTo": "February 2007",
-    "articleDataFile": ""
-  },
-  {
-    "id": 50005,
-    "name": "londis",
-    "title": "Londis - Customer Service Assistant",
-    "summary": "Part time customer service assistant while at College and University.",
-    "url": null,
-    "date": "1998-09-01T00:00:00Z",
-    "dateFrom": "Late 1998",
-    "dateTo": "Early 2005",
-    "articleDataFile": ""
+    "date": "2000-01-02T00:00:00Z",
+    "articleDataFile": "experience.html"
   }
 ]

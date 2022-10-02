@@ -33,6 +33,14 @@ namespace PersonalWebsite.Data.Models
         public int? OverrideArticleListCategoryId { get; set; }
 
         /// <inheritdoc/>
+        [JsonPropertyName("hideArticleList")]
+        public bool HideArticleList { get; set; }
+
+        /// <inheritdoc/>
+        [JsonPropertyName("hideMobile")]
+        public bool HideMobile { get; set; }
+
+        /// <inheritdoc/>
         [JsonPropertyName("articleSource")]
         public string ArticleSource { get; set; } = string.Empty;
 

@@ -53,11 +53,17 @@ article img {
 }
 
 article aside {
-    font-size: 90%;
+    font-size: 80%;
     font-style: italic;
     font-weight: 300;
     margin-bottom: 15px;
     text-align:right;
+}
+
+article p aside,
+article ul aside {
+    display: inline;
+    text-align:left;
 }
 
 article blockquote {
@@ -152,4 +158,33 @@ article a {
 
 .split-section h2 {
     margin-top: 0 !important;
+}
+
+article h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+article .role-details {
+    width:100%;
+    display:inline-flex;
+}
+
+article .role-summary aside {
+    font-size:70%;
+    text-align:left;
+    margin-top:5px;
+}
+
+.role-title {
+    flex-grow: 1;
+}
+
+.role-duration {
+    text-align: right;
+    float: right;
+    white-space: nowrap;
+    font-weight: lighter;
+    font-size: 85%;
 }

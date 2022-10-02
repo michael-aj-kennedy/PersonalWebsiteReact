@@ -13,6 +13,7 @@ interface IProps {
     categoryContent: CategoryContent | undefined;
     routeId: string;
     overrideArticleList: boolean;
+    hideArticleList: boolean;
 }
 
 interface IState {
@@ -54,7 +55,7 @@ export class Category extends Component<IProps, IState> {
         }
 
         return (
-            <div className="category-container">
+            <div className={`category-container ${this.props.hideArticleList ? " hide-list" : ""}`}>
                 <SimpleBar className="article-list">
                     <ul>
                         {articles.map((articleSummary, index) => {

@@ -19,13 +19,15 @@
     "name": "Showcase",
     "path": "showcase",
     "overrideArticleList": false,
-    "articleSource": "3.json"
+    "articleSource": "3.json",
+    "hideMobile": true
   },
   {
     "id": 4,
     "name": "Experience",
     "path": "experience",
     "overrideArticleList": false,
+    "hideArticleList": true,
     "articleSource": "experience.json"
   }
 ]

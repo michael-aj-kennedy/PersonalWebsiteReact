@@ -32,9 +32,17 @@ export function CategoryRoute() {
         getArticleSummaries(category ?? "")
     }, [category, currentCategory])
 
+    let hideArticleList = false;
+    let overrideArticleList = false;
+
+    if (articles != null && articles.data != null) {
+        hideArticleList = articles.data.hideArticleList;
+        overrideArticleList = articles.data.overrideArticleList;
+    }
+
     return (
         <div className={`category-route-container ${itemType}`}>
-            <Category categoryContent={articles?.data} routeId={id ?? ""} overrideArticleList={articles?.data?.overrideArticleList ?? false} />
+            <Category hideArticleList={hideArticleList} categoryContent={articles?.data} routeId={id ?? ""} overrideArticleList={overrideArticleList} />
         </div>
     );
 }

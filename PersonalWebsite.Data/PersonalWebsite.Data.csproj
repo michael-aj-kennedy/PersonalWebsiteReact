@@ -8,19 +8,16 @@
 
   <ItemGroup>
     <None Remove="Data\Articles\about.html" />
-    <None Remove="Data\Articles\advanced-senior-developer.html" />
     <None Remove="Data\Articles\ArtisticSoftware.html" />
     <None Remove="Data\Articles\DatabaseManager.html" />
     <None Remove="Data\Articles\DeepBreaths.html" />
+    <None Remove="Data\Articles\experience.html" />
     <None Remove="Data\Articles\GettingStartedWithHtmlEmail.html" />
     <None Remove="Data\Articles\GoogleInbox.html" />
     <None Remove="Data\Articles\GriefInspired.html" />
     <None Remove="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html" />
-    <None Remove="Data\Articles\jupiter-migration-engineer.html" />
     <None Remove="Data\Articles\MissingPieces.html" />
     <None Remove="Data\Articles\NavigatingNewWorld.html" />
-    <None Remove="Data\Articles\tikit-analyst-programmer.html" />
-    <None Remove="Data\Articles\tikit-technical-consultant.html" />
     <None Remove="Data\Articles\_starter.html" />
     <None Remove="Data\Categories\3.json" />
     <None Remove="Data\Categories\experience.json" />
@@ -39,9 +36,6 @@
     <Content Include="Data\Articles\about.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\advanced-senior-developer.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Data\Articles\DatabaseManager.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -49,9 +43,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\Articles\jupiter-migration-engineer.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\MissingPieces.html">
@@ -72,10 +63,7 @@
     <Content Include="Data\Articles\GettingStartedWithHtmlEmail.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Articles\tikit-analyst-programmer.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\Articles\tikit-technical-consultant.html">
+    <Content Include="Data\Articles\experience.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\_starter.html">

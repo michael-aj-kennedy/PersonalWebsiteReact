@@ -113,7 +113,8 @@ namespace PersonalWebsite.Data.Readers
                 DefaultArticleId = targetArticle?.Name?.Replace(" ", "-") ?? "",
                 SearchCategoryName = overrideCategory != null && !string.IsNullOrWhiteSpace(overrideCategory.Name)
                     ? overrideCategory.Name
-                    : category.Name ?? ""
+                    : category.Name ?? "",
+                HideArticleList = category.HideArticleList
             };
         }
 
