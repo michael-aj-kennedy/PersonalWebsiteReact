@@ -1,0 +1,16 @@
+﻿<div class="article-container">
+    <div class="content">
+        <p>Despite the similarities in appearance, the third persion of my personal website was a ground-up rewrite written using React and .Net 6.</p>
+        <p>After publishing the previous version of this site, I'd realised that there was something of a lag in the SQL server spin-up time - seemingly caused by my hosting package.</p>
+        <p>This issue was present in the old MVC site, but less noticable because the database was accessed prior to rendering the page on-screen.</p>
+        <p>I'd added a loading animation to cover this a little, but I was consious that a SQL connection on a seldom accessed personal website probably wasn't the way to go.</p>
+        <p>While this site retains some server-side API elements, I've completely dropped the database component, instead replacing it with a number of JSON files.</p>
+        <p>This has two benefits:</p>
+        <ul>
+            <li>Page load times are significantly increased.</li>
+            <li>Articles become easier to maintain because now all I need to do is upload a new HTML file whereas the SQL database is secured in such a way that makes it only accessible via online features directly on my hosting providers website.</li>
+        </ul>
+        <p>Accessible <a href="https://www.mikekennedy.co.uk/" target="_blank">here</a>.</p>
+        <img src="/content/images/PersonalWebsite/v3.png" alt="Example screenshot" loading="lazy" />
+    </div>
+</div>

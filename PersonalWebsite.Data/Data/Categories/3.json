@@ -1,22 +1,35 @@
 [
   {
-    "id": 4,
-    "name": "showcase 1",
-    "title": "Showcase 1",
-    "summary": "showcase 1 summary",
-    "url": null,
-    "pinned": false,
-    "date": "2000-01-02T00:00:00Z",
-    "articleDataFile": "_test.html"
-  },
-  {
-    "id": 5,
-    "name": "showcase 2",
-    "title": "Showcase 2",
-    "summary": "showcase 2 summary",
+    "id": 4003,
+    "name": "Personal Website (version 3)",
+    "title": "Personal Website (version 3)",
+    "summary": "Version 3 of my personal website, built using .Net 6 and React.",
     "url": null,
     "pinned": true,
+    "date": "2022-10-08T00:00:00Z",
+    "articleDataFile": "PersonalV3.html",
+    "headerImage": ""
+  },
+  {
+    "id": 4002,
+    "name": "Personal Website (version 2)",
+    "title": "Personal Website (version 2)",
+    "summary": "Version 2 of my personal website, built using .Net Core and Angular.",
+    "url": null,
+    "pinned": false,
     "date": "2000-01-03T00:00:00Z",
-    "articleDataFile": "5.json"
+    "articleDataFile": "PersonalV2.html",
+    "headerImage": ""
+  },
+  {
+    "id": 4001,
+    "name": "Personal Website (version 1)",
+    "title": "Personal Website (version 1)",
+    "summary": "Version 2 of my personal website, built using ASP.Net.",
+    "url": null,
+    "pinned": false,
+    "date": "2000-01-03T00:00:00Z",
+    "articleDataFile": "PersonalV1.html",
+    "headerImage": ""
   }
 ]

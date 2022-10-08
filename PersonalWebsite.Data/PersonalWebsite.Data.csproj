@@ -18,6 +18,9 @@
     <None Remove="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html" />
     <None Remove="Data\Articles\MissingPieces.html" />
     <None Remove="Data\Articles\NavigatingNewWorld.html" />
+    <None Remove="Data\Articles\PersonalV1.html" />
+    <None Remove="Data\Articles\PersonalV2.html" />
+    <None Remove="Data\Articles\PersonalV3.html" />
     <None Remove="Data\Articles\_starter.html" />
     <None Remove="Data\Categories\3.json" />
     <None Remove="Data\Categories\experience.json" />
@@ -64,6 +67,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\experience.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\PersonalV1.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\PersonalV2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\PersonalV3.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\_starter.html">

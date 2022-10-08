@@ -15,6 +15,7 @@ export function ArticleRoute(props: IProps) {
 
     useEffect(() => {
         async function getArticle(articleId: string, defaultArticleId: string) {
+            debugger;
             if (articleId === "" && defaultArticleId === "") {
                 return;
             }

@@ -75,6 +75,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="client-app\public\content\images\PersonalWebsite\" />
     <Folder Include="client-app\public\css\" />
     <Folder Include="client-app\src\interfaces\data\" />
     <Folder Include="wwwroot\" />
