@@ -120,6 +120,17 @@
     "articleDataFile": ""
   },
   {
+    "id": 1025,
+    "name": "Colour contrast of overlapping text labels",
+    "title": "Colour contrast of overlapping text labels",
+    "summary": "When text overlaps different background colours we can experience contrast issues. Using the Bootstrap Progress Bar control as an example we can work-around this limitation by applying additional CSS.",
+    "url": "https://dev.to/mikekennedydev/progress-bar-text-colour-1gg6",
+    "pinned": false,
+    "date": "2022-08-22T00:00:00Z",
+    "headerImage": "",
+    "articleDataFile": ""
+  },
+  {
     "id": 1027,
     "name": "The 5 Rules of ARIA",
     "title": "The 5 Rules of ARIA",
