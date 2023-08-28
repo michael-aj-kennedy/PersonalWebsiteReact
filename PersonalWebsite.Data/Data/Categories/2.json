@@ -118,5 +118,16 @@
     "date": "2022-07-04T00:00:00Z",
     "headerImage": "",
     "articleDataFile": ""
+  },
+  {
+    "id": 1027,
+    "name": "The 5 Rules of ARIA",
+    "title": "The 5 Rules of ARIA",
+    "summary": "When using ARIA, following the 5 rules of ARIA can help prevent us from making costly mistakes.",
+    "url": null,
+    "pinned": false,
+    "date": "2023-08-28T00:00:00Z",
+    "headerImage": "",
+    "articleDataFile": "FiveRulesOfAria.html"
   }
 ]

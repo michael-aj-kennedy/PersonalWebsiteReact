@@ -1,0 +1,22 @@
+﻿<div class="article-container">
+    <div class="content">
+        <p>As a general rule, no ARIA is better than bad ARIA. This is because bad ARIA can cause screen readers and other assistive technologies to misunderstand how a page fits together and this can make web pages unusable for end users.</p>
+        <p>When using ARIA, following the 5 rules of ARIA can help prevent us from making costly mistakes.</p>
+
+        <h2>Don't use ARIA!</h2>
+        <p>Aria should only be used to fill in gaps that HTML does not provide. ARIA should be the last resort, don't use it if native HTML elements will do the same thing.</p>
+
+        <h2>Don't replace native semantics</h2>
+        <p>Don't define an item as one type and use ARIA to override the type to something else. Instead of <code>&lt;div role="button"&gt;</code>, use <code>&lt;button&gt;</code>, this already provides interactivity such as keyboard press & simplifies code requirements.</p>
+
+        <h2>Interactive controls must be keyboard accessible</h2>
+        <p>Everything you can do with a mouse, you should be able to do with keyboard. For example, if a mouse is required to operate menus then it should be possible to operate these from the keyboard - this extends to using <code>home</code>/<code>end</code> to select the first and last items, typing to search, escape to clear selection, etc.</p>
+
+        <h2>Beware of role="presentation" and aria-hidden="true"</h2>
+        <p>Users can get stuck if keyboard users can see items, but screen readers can't. Therefore hiding items from ARIA needs to be done with extreme care.</p>
+
+        <h2>All interactive elements must have an accessible names</h2>
+        <p>All interactive elements such as links, buttons, inputs, etc should have accessible names. This helps assistive technologies to understand how everything fits together.</p>
+        <p>For example, we can use the <code>for</code> attribute to draw a link between an <code>&lt;input&gt;</code> and the associated <code>&lt;div role="label"&gt;</code> control.</p>
+    </div>
+</div>

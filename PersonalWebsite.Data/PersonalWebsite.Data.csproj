@@ -12,6 +12,7 @@
     <None Remove="Data\Articles\DatabaseManager.html" />
     <None Remove="Data\Articles\DeepBreaths.html" />
     <None Remove="Data\Articles\experience.html" />
+    <None Remove="Data\Articles\FiveRulesOfAria.html" />
     <None Remove="Data\Articles\GettingStartedWithHtmlEmail.html" />
     <None Remove="Data\Articles\GoogleInbox.html" />
     <None Remove="Data\Articles\GriefInspired.html" />
@@ -43,6 +44,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\DeepBreaths.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Articles\FiveRulesOfAria.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Articles\HtmlEmailEditorsDesignCaseStudy.html">
